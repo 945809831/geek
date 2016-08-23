@@ -1,0 +1,205 @@
+html, body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-width: 650px;
+	min-height: 600px;
+}
+
+nav ul{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin:  19px 0 5px 0;
+	padding: 0  96px  0  0;
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	color: #333;
+	font-weight: bold;
+	line-height: 24px;
+	margin-left: 20px;
+	font-size:   13px;
+	text-decoration: underline;
+}
+
+nav ul li:nth-child(7), 
+nav ul li:nth-child(8), 
+nav ul li:nth-child(9) {
+	font-weight: normal;
+}
+
+nav ul li:nth-child(9) {
+	display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+article {
+	position: absolute;
+	top: 18.2%;
+	width: 100%;
+}
+/*百度图标*/
+.bd-logo img {
+	display: block;
+	margin: 0 auto;
+	width: 270px;
+	height:  129px;
+}
+
+form {
+	position: relative;
+	margin: 22px auto 0;
+	width: 641px;
+	text-align: left;
+}
+
+form .search-box {
+	position: relative;
+	float: left;
+	display: inline-block;
+	width: 539px;
+	height: 34px;
+	border: 1px solid #b6b6b6;
+	margin-right: 0;
+	border-color: #b8b8b8 transparent #ccc #b8b8b8;
+	overflow: hidden;
+}
+
+form .search-box:focus {
+	border: 1px solid #4791ff transparent #4791ff #4791ff ;
+}
+
+form .search-box input {
+	height: 22px;
+	font: 16px/18px arial;
+	margin: 6px 0 0 7px;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	outline: 0;
+}
+
+form .search-box .photo-icon{
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 18px;
+	height: 16px;
+	cursor: pointer;
+	background-image: url(../images/camera_new.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+form .search-box .photo-icon:hover{
+	background-position: 0 -20px;
+}
+
+form button {
+	width: 100px;
+	height: 36px;
+	color: white;
+	font-size: 15px;
+	background: #3385ff;
+	border-bottom: 1px solid #2d78f4;
+	border:none;
+	outline: medium;
+	cursor: pointer;
+}
+
+/*页面底部*/
+footer {
+	position: absolute;
+	bottom: 23px;
+	height: 100px;
+	width: 100%;
+	font-size: 12px;
+	line-height: 22px;
+	color: #999;
+}
+/*footer链接的样式*/
+footer a{
+	color: #999;
+}
+.foot-wrapper{
+	width: 625px;
+	margin: 0 auto;
+}
+.foot-wrapper>div{
+	display: inline-block;
+	float: left;
+}
+.qr-code-adverts:nth-child(2){
+	margin-left: 33px;
+}
+/*二维码大小*/
+.qr-code-adverts img{
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+/*二维码右侧描述文字*/
+.qr-code-adverts .note{
+	float: left;
+	display: inline-block;
+	height: 46px;
+	width:  52px;
+	margin: 8px 0 0 10px;
+}
+.qr-code-adverts .note p{
+	margin: 0;
+	line-height: 23px;
+}
+
+.qr-code-adverts .note p:nth-child(1){
+	font-weight: bold;
+}
+
+footer .about{
+	margin-left: 33px;
+
+}
+
+footer .about p{
+	margin: 0;
+}
+
+footer .about .about-baidu a{
+	margin-right: 10px;
+}
+
+footer .about .icon{
+	display: inline-block;
+	width: 14px;
+	height: 17px;
+	vertical-align: middle;
+	background-image: url(../images/icons.png);
+	background-repeat: no-repeat;
+}
+
+footer .about .police{
+	background-position: -623px -96px;
+	margin-right: 5px;
+}
+
+footer .about .licence{
+	background-position: -600px -96px
+}

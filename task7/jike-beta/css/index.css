@@ -1,0 +1,535 @@
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei UI";
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #333333;
+}
+.header {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+.header a {
+  display: inline-block;
+}
+.header a:link {
+  color: #333333;
+}
+.header h2 {
+  display: inline-block;
+  margin: 0;
+}
+.header h2 .logo {
+  margin: 5px;
+  width: 113px;
+}
+.header .search-section {
+  display: inline-block;
+  position: absolute;
+  left: 30%;
+  top: 5px;
+  width: 380px;
+  height: 38px;
+  border: 1px solid #e4e4e4;
+}
+.header .search-section .search-text {
+  border: none;
+  outline: none;
+  line-height: 36px;
+}
+.header .search-section .search-btn {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -1px;
+  border: thin solid #e4e4e4;
+  left: 100%;
+  background: url(../images/header/topsearch-icon_e1f5df2.png) no-repeat 10px 10px;
+}
+.header .search-section .hot-words {
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 14px;
+}
+.header .search-section .hot-words a {
+  text-decoration: none;
+}
+.header .search-section .hot-words a:link {
+  color: #333333;
+}
+.header .loginbox {
+  display: inline-block;
+  float: right;
+  color: #333333;
+  line-height: 40px;
+  font-size: 12px;
+}
+.header .loginbox .message-wrapper {
+  display: inline-block;
+  padding: 0 0 0 0;
+  height: 20px;
+}
+.header .loginbox .message-wrapper .my-massage2 {
+  color: #333333;
+  display: inline-block;
+  background: url(../images/header/massage-icon2_d1369b2.gif) no-repeat 0 0;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+.loading {
+  height: 2px;
+  width: 100%;
+  background: #35b550;
+}
+.navposition .nav {
+  width: 1000px;
+  margin: 0px auto;
+}
+.navposition .nav .navbox {
+  display: inline-block;
+  width: 740px;
+}
+.navposition .nav .navbox .menu {
+  text-align: center;
+  display: inline-block;
+  width: 120px;
+  height: 42px;
+  line-height: 42px;
+}
+.navposition .nav .navbox .menu:hover {
+  color: #35b550;
+}
+.navposition .nav .navpanel {
+  display: none;
+  position: absolute;
+  width: 100%;
+  list-style-type: none;
+}
+.navposition .nav .navpanel .panel-item {
+  vertical-align: top;
+  display: inline-block;
+}
+.navposition .nav .navpanel .panel-item .item-box {
+  list-style-type: none;
+}
+.navposition .nav .navpanel .panel-item .item-box a {
+  font-size: 12px;
+}
+.navposition .user-need {
+  font-size: 12px;
+  display: inline-block;
+}
+.grey-line {
+  width: 100%;
+  height: 2px;
+  background: #f1f1f1;
+}
+.page {
+  width: 1000px;
+  margin: 10px auto;
+}
+.lesson-nav {
+  display: inline-block;
+  position: relative;
+  width: 206px;
+  float: left;
+  border-top: 2px solid #35b550;
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  height: 373px;
+}
+.lesson-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  height: 100%;
+  border-collapse: collapse;
+}
+.lesson-nav ul li {
+  padding-left: 10px;
+  border-bottom: 1px solid #e4e4e4;
+  height: 36px;
+}
+.lesson-nav ul li span {
+  line-height: 36px;
+}
+.lesson-nav ul li span:first-child {
+  float: left;
+}
+.lesson-nav ul li span:last-child {
+  float: right;
+}
+.lesson-focus {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+.lesson-focus .advertise-banner {
+  border: 1px solid #e4e4e4;
+  margin-bottom: 10px;
+  width: 558px;
+  height: 260px;
+}
+.lesson-focus .course-list {
+  border: 1px solid #e4e4e4;
+  width: 558px;
+  height: 98px;
+}
+.tools {
+  float: right;
+  display: inline-block;
+  width: 210px;
+  height: 373px;
+  border: 1px solid #e4e4e4;
+}
+.tools .news {
+  height: 125px;
+  width: 100px;
+  background-color: #e4e4e4;
+}
+.tools .user-info {
+  background-color: #e4e4e4;
+  height: 86px;
+  width: 100px;
+}
+.tools .service {
+  background-color: #e4e4e4;
+  height: 100px;
+  width: 100px;
+}
+.headline {
+  margin: 10px 0;
+  height: 30px;
+}
+.headline span {
+  line-height: 30px;
+}
+.headline span:first-child {
+  float: left;
+  font-size: 18px;
+  color: #35b550;
+}
+.headline span:last-child {
+  float: right;
+}
+.lesson-intro {
+  display: inline-block;
+  position: relative;
+}
+.lesson-intro .photo:hover {
+  opacity: 0.3;
+}
+.lesson-intro .title {
+  position: absolute;
+  bottom: 0px;
+  width: 235px;
+  color: white;
+  line-height: 7px;
+  text-align: center;
+  background: url(../images/pubclass/openclass_shadow_52b7fa2.png) no-repeat 0px 0px;
+}
+.lesson-intro .class-desc {
+  position: absolute;
+  width: 215px;
+  height: 180px;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  z-index: -1;
+}
+.lesson-intro .class-desc a {
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  color: #ffffff;
+  background-color: #989898;
+  border-radius: 5px;
+  bottom: 10px;
+  left: 28px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 18px;
+}
+.classification {
+  display: block;
+  height: 41px;
+  margin: 20px 0 0 0;
+  padding-left: 0;
+}
+.classification li {
+  display: inline-block;
+  width: 16%;
+  text-align: center;
+  line-height: 41px;
+  cursor: pointer;
+  border-bottom: thin solid #e4e4e4;
+}
+.classification li:hover {
+  color: #35b550;
+}
+.class-intro {
+  display: inline-block;
+  width: 235px;
+  height: 220px;
+  border: thin solid #e4e4e4;
+  margin: 0 8px 8px 0;
+}
+.class-intro .class-photo img {
+  width: 100%;
+}
+.class-intro .class-info {
+  padding: 2px 5px;
+}
+.class-intro .class-info .class-time {
+  font-size: 12px;
+  color: grey;
+}
+.class-intro .class-info .class-time .time {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../images/clok_a413ecf.png) no-repeat;
+  background-size: 100% auto;
+}
+.class-intro .class-info .class-time .tag {
+  float: right;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../images/webbase.png) no-repeat;
+  background-size: 100% auto;
+}
+.career-path .career-table {
+  border: thin solid #35b550;
+}
+.career-path .career-table a {
+  border: thin solid #e4e4e4;
+  display: inline-block;
+  width: 194px;
+  height: 302px;
+}
+.career-path .career-table a img {
+  width: 100%;
+}
+.career-path .career-table a button {
+  width: 140px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: 0;
+  color: #35b550;
+  background: #f3fff6;
+}
+.knowledge .knowledge-table .card {
+  display: inline-block;
+  border: 1px solid #e4e4e4;
+}
+.knowledge .knowledge-table .card a {
+  display: block;
+  height: 120px;
+  width: 165px;
+  position: relative;
+  transition: transform 1s;
+  -webkit-transition: -webkit-transform 1s;
+}
+.knowledge .knowledge-table .card a .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.knowledge .knowledge-table .card a .front img {
+  margin: 10px 0 0 60px;
+  width: 40px;
+  height: 40px;
+}
+.knowledge .knowledge-table .card a .front h3 {
+  text-align: center;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.knowledge .knowledge-table .card a .front p {
+  text-align: center;
+}
+.knowledge .knowledge-table .card a .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.knowledge .knowledge-table .card a:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.excellent-course .course-item {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #e4e4e4;
+  padding: 17px;
+  margin-right: 10px;
+}
+.excellent-course .course-item .class-image {
+  width: 200px;
+  height: 160px;
+  margin-bottom: 15px;
+}
+.excellent-course .course-item .class-image img {
+  width: 100%;
+  height: 100%;
+}
+.excellent-course .course-item .describe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.enterprise {
+  position: relative;
+}
+.enterprise .left-arrow {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../images/banner-left_fe0df34.png) no-repeat 0 0;
+}
+.enterprise .right-arrow {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../images/banner-right_a0bdd7d.png) no-repeat 0 0;
+}
+.enterprise .slide-container {
+  border: 1px solid #e4e4e4;
+  overflow: hidden;
+}
+.enterprise .slide-container .slider {
+  width: 2880px;
+  padding: 20px 0px;
+}
+.enterprise .slide-container .slider .enterprise-group a {
+  display: inline-block;
+  padding: 5px 2px;
+}
+.enterprise .slide-container .slider .enterprise-group a img {
+  height: 60px;
+  width: 150px;
+  border: 1px solid #e4e4e4;
+}
+footer {
+  background-color: #fafafa;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+footer .about {
+  width: 1000px;
+  margin: 10px auto 40px;
+}
+footer .about .jike-list {
+  display: inline-block;
+  padding-left: 20px;
+  width: 154px;
+  height: 170px;
+  vertical-align: top;
+  line-height: 26px;
+  color: #999999;
+  border-left: 1px solid #e4e4e4;
+}
+footer .about .jike-list dl {
+  display: inline-block;
+  list-style-type: circle;
+}
+footer .about .jike-list dl dt {
+  display: block;
+}
+footer .about .jike-list dl dd {
+  display: block;
+  margin: 0px;
+  font-size: 12px;
+}
+footer .share {
+  display: inline-block;
+  width: 200px;
+}
+footer .share p:first-child {
+  color: #35b550;
+}
+footer .share .iphone {
+  display: block;
+}
+footer .share .iphone div {
+  margin: 0 0 15px 15px;
+  display: inline-block;
+}
+footer .share .iphone div p {
+  color: #999999;
+  margin: 0;
+}
+footer .share .iphone div p:first-child {
+  font-size: 16px;
+  font-weight: bold;
+}
+footer .share .touch a {
+  width: 36px;
+  height: 36px;
+  background-image: url(../images/footer/icon_7f8b929.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+footer .share .touch a:nth-child(1) {
+  background-position: -20px 0;
+}
+footer .share .touch a:nth-child(2) {
+  background-position: -20px -80px;
+}
+footer .share .touch a:nth-child(3) {
+  background-position: -140px 0;
+}
+footer .share .contact {
+  display: inline-block;
+}
+footer .share .contact .kefu {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: url(../images/footer/kefu_8edc734.png) no-repeat 0 0;
+  background-size: cover;
+}
+footer .share .contact div {
+  display: inline-block;
+}
+footer .share .contact div p {
+  color: #999999;
+  margin: 0 0 0 3px;
+  line-height: 18px;
+}
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+  font-color: #999999;
+  font-size: 13px;
+}
+.copyright a {
+  color: #999999;
+  text-decoration: none;
+}

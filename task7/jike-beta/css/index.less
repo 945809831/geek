@@ -1,0 +1,614 @@
+//全局变量和minix
+@color-jike-green: #35b550;
+@border-color: #e4e4e4;
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei UI";
+}
+
+a {
+  text-decoration: none;
+  &:link {
+    color: rgb(51, 51, 51);
+  }
+}
+
+//头部的样式
+.header {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  a {
+    display: inline-block;
+    &:link {
+      color: rgb(51, 51, 51);
+    }
+  }
+  h2 {
+    display: inline-block;
+    margin: 0;
+    .logo {
+      margin: 5px;
+      width: 113px;
+    }
+  }
+  //中间查找框的样式
+  .search-section {
+    display: inline-block;
+    position: absolute;
+    left: 30%;
+    top: 5px;
+    width: 380px;
+    height: 38px;
+    border: 1px solid @border-color;
+    //输入框的样式
+    .search-text {
+      border: none;
+      outline: none;
+      line-height: 36px;
+    }
+    //查找按钮样式
+    .search-btn {
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: -1px;
+      border: thin solid @border-color;
+      left: 100%;
+      background: url(../images/header/topsearch-icon_e1f5df2.png) no-repeat 10px 10px;
+    }
+    .hot-words {
+      display: inline-block;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      font-size: 14px;
+      a {
+        text-decoration: none;
+        &:link {
+          color: rgb(51, 51, 51);
+        }
+      }
+    }
+  }
+  //登录样式
+  .loginbox {
+    display: inline-block;
+    float: right;
+    color: rgb(51, 51, 51);
+    line-height: 40px;
+    font-size: 12px;
+    .message-wrapper {
+      display: inline-block;
+      padding: 0 0 0 0;
+      height: 20px;
+      .my-massage2 {
+        color: rgb(51, 51, 51);
+        display: inline-block;
+        background: url(../images/header/massage-icon2_d1369b2.gif) no-repeat 0 0;
+        background-size: contain;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+//分割线样式
+.loading {
+  height: 2px;
+  width: 100%;
+  background: @color-jike-green;
+}
+
+//导航框的样式
+.navposition {
+
+  .nav {
+    width: 1000px;
+    margin: 0px auto;
+    .navbox {
+      display: inline-block;
+      width: 740px;
+      .menu {
+        text-align: center;
+        display: inline-block;
+        width: 120px;
+        height: 42px;
+        line-height: 42px;
+        &:hover {
+          color: @color-jike-green;
+        }
+      }
+    }
+    //导航栏下拉菜单
+    .navpanel {
+      display: none;
+      position: absolute;
+      width: 100%;
+      list-style-type: none;
+
+      .panel-item {
+        vertical-align: top;
+        display: inline-block;
+        .item-box {
+          list-style-type: none;
+          a {
+            font-size: 12px;
+
+          }
+        }
+      }
+    }
+    //.search-btn {
+    //  width: 250px;
+    //}
+  }
+  .user-need {
+    font-size: 12px;
+    display: inline-block;
+  }
+}
+//}导航栏下面水平分割线
+.grey-line {
+  width: 100%;
+  height: 2px;
+  background: rgb(241, 241, 241);
+}
+
+//第一部分样式
+.page {
+  width: 1000px;
+  margin: 10px auto;
+}
+
+//右侧课程分类导航
+.lesson-nav {
+  display: inline-block;
+  position: relative;
+  width: 206px;
+  float: left;
+  border-top: 2px solid @color-jike-green;
+  border-left: 1px solid @border-color;
+  border-right: 1px solid @border-color;
+  //border-bottom: 1px solid  @border-color;
+  height: 373px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    height: 100%;
+    border-collapse: collapse;
+    li {
+      padding-left: 10px;
+      border-bottom: 1px solid @border-color;
+      height: 36px;
+      span {
+        line-height: 36px;
+        &:first-child {
+          float: left;
+        }
+        &:last-child {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+//中间部分重点展示
+.lesson-focus {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  .advertise-banner {
+    border: 1px solid @border-color;
+    margin-bottom: 10px;
+    width: 558px;
+    height: 260px;
+
+  }
+  .course-list {
+    border: 1px solid @border-color;
+    width: 558px;
+    height: 98px;
+  }
+}
+
+.tools {
+  float: right;
+  display: inline-block;
+  width: 210px;
+  height: 373px;
+  border: 1px solid @border-color;
+  .news {
+    //display: inline-block;
+    height: 125px;
+    width: 100px;
+    background-color: @border-color;
+  }
+  .user-info {
+    //display: inline-block;
+    background-color: @border-color;
+    height: 86px;
+    width: 100px;
+  }
+  .service {
+    //display: inline-block;
+    background-color: @border-color;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+//最新公开课样式
+.headline {
+  margin: 10px 0;
+  height: 30px;
+  span {
+    line-height: 30px;
+    &:first-child {
+      float: left;
+      font-size: 18px;
+      color: @color-jike-green;
+    }
+    &:last-child {
+      float: right;
+    }
+  }
+}
+
+//最新公开课中的展示图片样式
+.lesson-intro {
+  display: inline-block;
+  position: relative;
+
+  .photo {
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+  .title {
+    position: absolute;
+    bottom: 0px;
+    width: 235px;
+    color: white;
+    line-height: 7px;
+    text-align: center;
+    background: url(../images/pubclass/openclass_shadow_52b7fa2.png) no-repeat 0px 0px;
+
+  }
+  .class-desc {
+    position: absolute;
+    width: 215px;
+    height: 180px;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    z-index: -1;
+    a {
+      display: block;
+      position: absolute;
+      width: 150px;
+      height: 35px;
+      color: #ffffff;
+      background-color: #989898;
+      border-radius: 5px;
+      bottom: 10px;
+      left: 28px;
+      text-align: center;
+      line-height: 35px;
+      font-size: 18px;
+    }
+  }
+}
+
+//课程分类列表
+.classification {
+  display: block;
+  height: 41px;
+  margin: 20px 0 0 0;
+  padding-left: 0;
+  li {
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+    line-height: 41px;
+    cursor: pointer;
+    border-bottom: thin solid @border-color;
+    &:hover {
+      color: @color-jike-green;
+    }
+  }
+}
+
+.class-intro {
+  display: inline-block;
+  width: 235px;
+  height: 220px;
+  border: thin solid @border-color;
+  margin: 0 8px 8px 0;
+  .class-photo {
+    img {
+      width: 100%;
+    }
+  }
+  .class-info {
+    padding: 2px 5px;
+    .class-time {
+      font-size: 12px;
+      color: grey;
+      .time {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url(../images/clok_a413ecf.png) no-repeat;
+        background-size: 100% auto;
+      }
+      .tag {
+        float: right;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url(../images/webbase.png) no-repeat;
+        background-size: 100% auto;
+      }
+    }
+  }
+}
+
+//职业路径样式
+.career-path {
+  .career-table {
+    border: thin solid @color-jike-green;
+    a {
+      border: thin solid #e4e4e4;
+      display: inline-block;
+      width: 194px;
+      height: 302px;
+      img {
+        width: 100%;
+      }
+      button {
+        width: 140px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        outline: 0;
+        color: @color-jike-green;
+        background: #f3fff6;
+      }
+    }
+  }
+}
+
+//知识体系统样式
+.knowledge {
+  .knowledge-table {
+    .card {
+      display: inline-block;
+
+      border: 1px solid @border-color;
+      a {
+        display: block;
+        height: 120px;
+        width: 165px;
+        position: relative;
+        transition: transform 1s;
+        -webkit-transition: -webkit-transform 1s;
+
+        .front {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          img {
+            margin: 10px 0 0 60px;
+            width: 40px;
+            height: 40px;
+          }
+          h3 {
+            text-align: center;
+            font-size: 16px;
+            margin: 5px 0;
+          }
+          p {
+            text-align: center;
+          }
+        }
+        .back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          top: 0;
+          left: 0;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+
+          -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+        }
+        &:hover {
+          -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+}
+
+//精品课程
+.excellent-course {
+  .course-item {
+    display: inline-block;
+    position: relative;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 17px;
+    margin-right: 10px;
+    .class-image {
+      width: 200px;
+      height: 160px;
+      margin-bottom: 15px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .describe {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+//战略合作企业
+.enterprise {
+  position: relative;
+  .left-arrow {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url(../images/banner-left_fe0df34.png) no-repeat 0 0;
+  }
+  .right-arrow {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: url(../images/banner-right_a0bdd7d.png) no-repeat 0 0;
+  }
+  .slide-container {
+    border: 1px solid @border-color;
+    overflow: hidden;
+    .slider {
+      width: 2880px;
+      padding: 20px 0px;
+      .enterprise-group {
+        a {
+          display: inline-block;
+          padding: 5px 2px;
+          img {
+            height: 60px;
+            width: 150px;
+            border: 1px solid #e4e4e4;
+          }
+        }
+      }
+    }
+  }
+}
+
+//页面底部样式
+footer {
+  background-color: #fafafa;
+  border-top: 1px solid rgb(228, 228, 228);
+  border-bottom: 1px solid rgb(228, 228, 228);
+  .about {
+    width: 1000px;
+    margin: 10px auto 40px;
+
+    .jike-list {
+      display: inline-block;
+      padding-left: 20px;
+      width: 154px;
+      height: 170px;
+      vertical-align: top;
+      line-height: 26px;
+      color: rgb(153, 153, 153);
+      border-left: 1px solid rgb(228, 228, 228);
+      dl {
+        display: inline-block;
+        list-style-type: circle;
+        dt {
+          display: block;
+        }
+        dd {
+          display: block;
+          margin: 0px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .share {
+    display: inline-block;
+    width: 200px;
+    p:first-child {
+      color: @color-jike-green;
+    }
+    .iphone {
+      display: block;
+      div {
+        margin: 0 0 15px 15px;
+        display: inline-block;
+        p {
+          color: rgb(153, 153, 153);
+          margin: 0;
+          &:first-child {
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .touch {
+      a {
+        width: 36px;
+        height: 36px;
+        background-image: url(../images/footer/icon_7f8b929.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        &:nth-child(1) {
+          background-position: -20px 0;
+        }
+        &:nth-child(2) {
+          background-position: -20px -80px;
+        }
+        &:nth-child(3) {
+          background-position: -140px 0;
+        }
+      }
+
+    }
+    .contact {
+      display: inline-block;
+      .kefu {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background: url(../images/footer/kefu_8edc734.png) no-repeat 0 0;
+        background-size: cover;
+      }
+      div {
+        display: inline-block;
+        p {
+          color: rgb(153, 153, 153);
+          margin: 0 0 0 3px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+//版权信息样式
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+  font-color: rgb(153, 153, 153);
+  font-size: 13px;
+  a {
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+  }
+}

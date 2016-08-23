@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院IT在线教育平台-中国最大的IT职业在线教育平台</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery-2.2.3.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="wrapper">
+        <a href="#">
+            <h2><img src="images/header/logo_c8caff4.png" class="logo" alt="极客学院"></h2>
+        </a>
+
+        <div class="search-section">
+            <div class="headsearch" id="headsearch" action="###">
+                <input class="search-text" type="text" name="q" autocomplete="off" id="web_search_header"
+                       placeholder="搜索课程、问答或Wiki" value="" style="padding-right: 55px;">
+                <input type="submit" class="search-btn" value="">
+                <div class="hot-words">
+                    <a href="#">Android</a>
+                    <a href="#">iOS</a>
+                    <a href="#">HTML5</a>
+                </div>
+            </div>
+        </div>
+        <div class="loginbox">
+            <div class="message-wrapper"><span class="my-massage2"></span></div>
+            <span style="padding: 0px 10px;">|</span>
+            <a href="#">QQ登录</a>
+            <span style="padding: 0px 10px">|</span>
+            <a href="#">登录</a>
+            <span style="padding: 0px 10px">|</span>
+            <a href="#">注册</a>
+        </div>
+    </div>
+</div>
+<!--分割线-------------------------------------------------------------->
+<div class="loading"></div>
+<!--下面的导航栏-->
+<div class="navposition">
+    <div class="nav">
+        <div class="navbox">
+            <a href="#">首页</a>
+            <a href="#" class="menu">职业课程</a>
+            <a href="#" class="menu">就业学习</a>
+            <a href="#" class="menu">极客社区</a>
+            <a href="#" class="menu">极客＋</a>
+
+            <ul class="navpanel cf">
+                <li class="panel-item" node-type="nav-panel-item">
+                    <span class="angle"></span>
+                    <ul class="item-box">
+                        <li><a target="_blank" href="#">课程库</a></li>
+                        <li><a target="_blank" href="#">知识体系图</a></li>
+                        <li><a target="_blank" href="#">职业路径图</a></li>
+                        <li><a target="_blank" href="#">系列课程</a></li>
+                    </ul>
+                </li>
+                <li class="panel-item" node-type="nav-panel-item">
+                    <span class="angle"></span>
+                    <ul class="item-box">
+                        <li><a target="_blank" href="#">Web前端开发</a></li>
+                        <li><a target="_blank" href="#">Android开发</a></li>
+                        <li><a target="_blank" href="#">PHP 开发</a></li>
+                        <li><a target="_blank" href="#">iOS开发</a></li>
+                        <li><a target="_blank" href="#">JavaWeb开发</a></li>
+                    </ul>
+                </li>
+                <li class="panel-item" node-type="nav-panel-item">
+                    <span class="angle"></span>
+                    <ul class="item-box">
+                        <li><a target="_blank" href="#">Wiki</a></li>
+                        <li><a target="_blank" href="#">技术问答</a></li>
+                        <li><a target="_blank" href="#">社群</a></li>
+                        <li><a target="_blank" href="#">资源分享</a></li>
+                    </ul>
+                </li>
+                <li class="panel-item" node-type="nav-panel-item">
+                    <span class="angle"></span>
+                    <ul class="item-box">
+                        <li><a target="_blank" href="#">高校合作</a></li>
+                        <li><a target="_blank" href="#">极客人才联盟</a></li>
+                        <li><a target="_blank" href="#">布道师招募</a></li>
+                        <li><a target="_blank" href="#">实战教练招募</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="user-need">
+            <a href="#">
+                <span><img src="images/header/vip-icon_76ae754.png">VIP会员</span>
+            </a>
+            <a href="#" target="_blank">
+                <span><img src="images/header/star-icon_c593bc1.png">求课程</span>
+            </a>
+            <a href="#" target="_blank">
+                            <span style="position: relative;">
+                                <img src="images/header/dl-icon_4bc18a7.png">
+                                <img src="images/header/newicon_56b11ef.png"
+                                     style="width: 14px;height: 15px;position: absolute;z-index: 2000;right: -19px;top: -14px;display: block;">APP下载
+                            </span>
+            </a>
+        </div>
+
+    </div>
+</div>
+</div>
+<!--水平分割线-->
+<div class="grey-line"></div>
+<!--导航栏的样式-->
+<div class="page">
+    <div class="favorite">
+        <div class="lesson-nav">
+            <ul>
+                <li><span>移动开发</span><span> > </span></li>
+                <li><span>前段开发</span><span> > </span></li>
+                <li><span>后端开发</span><span> > </span></li>
+                <li><span>基础知识</span><span> > </span></li>
+                <li><span>云计算&大数据</span><span> > </span></li>
+                <li><span>只能硬件&互联网</span><span> > </span></li>
+                <li><span>数据库</span><span> > </span></li>
+                <li><span>认证考试</span><span> > </span></li>
+                <li><span>企业IT</span><span> > </span></li>
+                <li><span>设计&产品&测试</span><span> > </span></li>
+            </ul>
+        </div>
+        <!--课程展示-->
+        <div class="lesson-focus">
+            <div class="advertise-banner"></div>
+            <div class="course-list"></div>
+        </div>
+        <!--新闻、用户信息和工具-->
+        <div class="tools">
+            <div class="news"></div>
+            <div class="user-info"></div>
+            <div class="service"></div>
+        </div>
+    </div>
+    <!--最新公开课-->
+    <div class="new-public-lesson">
+        <div class="headline">
+            <span class="left">最新公开课</span>
+            <span class="right">全部 >></span>
+        </div>
+        <div>
+            <div class="lesson-intro">
+                <div class="photo">
+                    <img src="images/pubclass/index.png" alt="">
+                    <div class="title">
+                        <p>iOS图片轮播</p>
+                        <p>5月4日 周三 15:00</p>
+                    </div>
+                </div>
+                <div class="class-desc">
+                    <p>职业方向：iOS工程师</p>
+                    <p>主讲：刘永刚</p>
+                    <p>用iOS实现图片轮播，从开发思路将其，一步一步深入，直到完成。</p>
+                    <a href="#">直播结束</a>
+                </div>
+            </div>
+            <div class="lesson-intro">
+                <div class="photo">
+                    <img src="images/pubclass/index.png" alt="">
+                    <div class="title">
+                        <p>iOS图片轮播</p>
+                        <p>5月4日 周三 15:00</p>
+                    </div>
+                </div>
+                <div class="class-desc">
+                    <p>职业方向：iOS工程师</p>
+                    <p>主讲：刘永刚</p>
+                    <p>用iOS实现图片轮播，从开发思路将其，一步一步深入，直到完成。</p>
+                    <a href="#">直播结束</a>
+                </div>
+            </div>
+            <div class="lesson-intro">
+                <div class="photo">
+                    <img src="images/pubclass/index.png" alt="">
+                    <div class="title">
+                        <p>iOS图片轮播</p>
+                        <p>5月4日 周三 15:00</p>
+                    </div>
+                </div>
+                <div class="class-desc">
+                    <p>职业方向：iOS工程师</p>
+                    <p>主讲：刘永刚</p>
+                    <p>用iOS实现图片轮播，从开发思路将其，一步一步深入，直到完成。</p>
+                    <a href="#">直播结束</a>
+                </div>
+            </div>
+            <div class="lesson-intro">
+                <div class="photo">
+                    <img src="images/pubclass/index.png" alt="">
+                    <div class="title">
+
+                        <p>iOS图片轮播</p>
+                        <p>5月4日 周三 15:00</p>
+
+                    </div>
+                </div>
+                <div class="class-desc">
+                    <p>职业方向：iOS工程师</p>
+                    <p>主讲：刘永刚</p>
+                    <p>用iOS实现图片轮播，从开发思路将其，一步一步深入，直到完成。</p>
+                    <a href="#">直播结束</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="classification">
+            <li>热门推荐</li>
+            <li>最新课程</li>
+            <li>免费课程</li>
+            <li>项目实战</li>
+            <li>全球首发</li>
+            <li>企业合作</li>
+        </ul>
+        <!--公开课课程简介-->
+        <div class="class-group">
+            <!--公开课第一部分-->
+            <div class="group1">
+
+                <div class="class-intro">
+                    <div class="class-photo">
+                        <img src="images/display/56ef575e4745e.jpg" alt="">
+                    </div>
+                    <div class="class-info">
+                        <p class="class-name">Arduino模拟键盘鼠标事件</p>
+                        <p class="hide" style="display: none">
+                            本课程学习微信公众平台绑定功能，分别介绍并实例讲解网站老用户的绑定以及手机号码绑定两种类型，同时也更加深入学习对MySQL数据库的操作。
+                        </p>
+                        <p class="class-time"><i class="time"></i><span>3课时51分钟</span><i class="tag"></i></p>
+                        <p class="hide"></p>
+                    </div>
+                </div>
+                <div class="class-intro">
+                    <div class="class-photo">
+                        <img src="images/display/56ef575e4745e.jpg" alt="">
+                    </div>
+                    <div class="class-info">
+                        <p class="class-name">Arduino模拟键盘鼠标事件</p>
+                        <p class="hide" style="display: none">
+                            本课程学习微信公众平台绑定功能，分别介绍并实例讲解网站老用户的绑定以及手机号码绑定两种类型，同时也更加深入学习对MySQL数据库的操作。
+                        </p>
+                        <p class="class-time"><i class="time"></i><span>3课时51分钟</span><i class="tag"></i></p>
+                        <p class="hide"></p>
+                    </div>
+                </div>
+                <div class="class-intro">
+                    <div class="class-photo">
+                        <img src="images/display/56ef575e4745e.jpg" alt="">
+                    </div>
+                    <div class="class-info">
+                        <p class="class-name">Arduino模拟键盘鼠标事件</p>
+                        <p class="hide" style="display: none">
+                            本课程学习微信公众平台绑定功能，分别介绍并实例讲解网站老用户的绑定以及手机号码绑定两种类型，同时也更加深入学习对MySQL数据库的操作。
+                        </p>
+                        <p class="class-time"><i class="time"></i><span>3课时51分钟</span><i class="tag"></i></p>
+                        <p class="hide"></p>
+                    </div>
+                </div>
+                <div class="class-intro">
+                    <div class="class-photo">
+                        <img src="images/display/56ef575e4745e.jpg" alt="">
+                    </div>
+                    <div class="class-info">
+                        <p class="class-name">Arduino模拟键盘鼠标事件</p>
+                        <p class="hide" style="display: none">
+                            本课程学习微信公众平台绑定功能，分别介绍并实例讲解网站老用户的绑定以及手机号码绑定两种类型，同时也更加深入学习对MySQL数据库的操作。
+                        </p>
+                        <p class="class-time"><i class="time"></i><span>3课时51分钟</span><i class="tag"></i></p>
+                        <p class="hide"></p>
+                    </div>
+                </div>
+
+                <div class="class-intro">
+                    <div class="class-photo">
+                        <img src="images/display/56ef575e4745e.jpg" alt="">
+                    </div>
+                    <div class="class-info">
+                        <p class="class-name">Arduino模拟键盘鼠标事件</p>
+                        <p class="hide" style="display: none">
+                            本课程学习微信公众平台绑定功能，分别介绍并实例讲解网站老用户的绑定以及手机号码绑定两种类型，同时也更加深入学习对MySQL数据库的操作。
+                        </p>
+                        <p class="class-time"><i class="time"></i><span>3课时51分钟</span><i class="tag"></i></p>
+                        <p class="hide"></p>
+                    </div>
+                </div>
+                <div class="class-intro">
+                    <div class="class-photo">
+                        <img src="images/display/56ef575e4745e.jpg" alt="">
+                    </div>
+                    <div class="class-info">
+                        <p class="class-name">Arduino模拟键盘鼠标事件</p>
+                        <p class="hide" style="display: none">
+                            本课程学习微信公众平台绑定功能，分别介绍并实例讲解网站老用户的绑定以及手机号码绑定两种类型，同时也更加深入学习对MySQL数据库的操作。
+                        </p>
+                        <p class="class-time"><i class="time"></i><span>3课时51分钟</span><i class="tag"></i></p>
+                        <p class="hide"></p>
+                    </div>
+                </div>
+                <div class="class-intro">
+                    <div class="class-photo">
+                        <img src="images/display/56ef575e4745e.jpg" alt="">
+                    </div>
+                    <div class="class-info">
+                        <p class="class-name">Arduino模拟键盘鼠标事件</p>
+                        <p class="hide" style="display: none">
+                            本课程学习微信公众平台绑定功能，分别介绍并实例讲解网站老用户的绑定以及手机号码绑定两种类型，同时也更加深入学习对MySQL数据库的操作。
+                        </p>
+                        <p class="class-time"><i class="time"></i><span>3课时51分钟</span><i class="tag"></i></p>
+                        <p class="hide"></p>
+                    </div>
+                </div>
+                <div class="class-intro">
+                    <div class="class-photo">
+                        <img src="images/display/56ef575e4745e.jpg" alt="">
+                    </div>
+                    <div class="class-info">
+                        <p class="class-name">Arduino模拟键盘鼠标事件</p>
+                        <p class="hide" style="display: none">
+                            本课程学习微信公众平台绑定功能，分别介绍并实例讲解网站老用户的绑定以及手机号码绑定两种类型，同时也更加深入学习对MySQL数据库的操作。
+                        </p>
+                        <p class="class-time"><i class="time"></i><span>3课时51分钟</span><i class="tag"></i></p>
+                        <p class="hide"></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--职业路径图-->
+    <div class="career-path">
+        <div class="headline">
+            <span class="left">职业路径图</span>
+            <span class="right">全部 >></span>
+        </div>
+        <div class="career-table">
+            <a class="career" href="#">
+                <img src="images/path/html5.png" alt="">
+                <h3>Web前端工程师</h3>
+                <p>月薪15-30k</p>
+                <p>未来Web开发的趋势</p>
+                <button>立即学习</button>
+            </a>
+            <a class="career" href="#">
+                <img src="images/path/html5.png" alt="">
+                <h3>Web前端工程师</h3>
+                <p>月薪15-30k</p>
+                <p>未来Web开发的趋势</p>
+                <button>立即学习</button>
+            </a>
+            <a class="career" href="#">
+                <img src="images/path/html5.png" alt="">
+                <h3>Web前端工程师</h3>
+                <p>月薪15-30k</p>
+                <p>未来Web开发的趋势</p>
+                <button>立即学习</button>
+            </a>
+            <a class="career" href="#">
+                <img src="images/path/html5.png" alt="">
+                <h3>Web前端工程师</h3>
+                <p>月薪15-30k</p>
+                <p>未来Web开发的趋势</p>
+                <button>立即学习</button>
+            </a>
+            <a class="career" href="#">
+                <img src="images/path/html5.png" alt="">
+                <h3>Web前端工程师</h3>
+                <p>月薪15-30k</p>
+                <p>未来Web开发的趋势</p>
+                <button>立即学习</button>
+            </a>
+            <a class="career" href="#">
+                <img src="images/path/html5.png" alt="">
+                <h3>Web前端工程师</h3>
+                <p>月薪15-30k</p>
+                <p>未来Web开发的趋势</p>
+                <button>立即学习</button>
+            </a>
+            <a class="career" href="#">
+                <img src="images/path/html5.png" alt="">
+                <h3>Web前端工程师</h3>
+                <p>月薪15-30k</p>
+                <p>未来Web开发的趋势</p>
+                <button>立即学习</button>
+            </a>
+            <a class="career" href="#">
+                <img src="images/path/html5.png" alt="">
+                <h3>Web前端工程师</h3>
+                <p>月薪15-30k</p>
+                <p>未来Web开发的趋势</p>
+                <button>立即学习</button>
+            </a>
+            <a class="career" href="#">
+                <img src="images/path/html5.png" alt="">
+                <h3>Web前端工程师</h3>
+                <p>月薪15-30k</p>
+                <p>未来Web开发的趋势</p>
+                <button>立即学习</button>
+            </a>
+            <a class="career" href="#">
+                <img src="images/path/html5.png" alt="">
+                <h3>Web前端工程师</h3>
+                <p>月薪15-30k</p>
+                <p>未来Web开发的趋势</p>
+                <button>立即学习</button>
+            </a>
+
+        </div>
+    </div>
+
+    <!--知识体系图-->
+    <div class="knowledge">
+        <div class="headline">
+            <span class="left">职业路径图</span>
+            <span class="right">全部 >></span>
+        </div>
+        <div class="knowledge-table">
+            <!--第一行-->
+            <div class="card">
+                <a href="#">
+                    <div class="front">
+                        <img src="images/system/android%20.png" alt="">
+                        <h3>Android</h3>
+                        <p>90门课程</p>
+                    </div>
+                    <div class="back">
+                        <p>982236人已学习</p>
+                        <button>立即学习</button>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--精品课程-->
+    <div class="excellent-course">
+        <div class="headline">
+            <span class="left">精品系列课程</span>
+            <span class="right">全部 >></span>
+        </div>
+        <div class="course-item">
+            <h3>Cocos-2d引擎源码</h3>
+            <div class="class-image">
+                <img src="images/excellent/cocos2dx.jpg" alt="">
+            </div>
+            <div class="status">
+                <span>8门 </span>
+                <span>21028人学习</span>
+                <span>收藏</span>
+            </div>
+            <div class="describe">
+                <div class="teacher">
+                    <a><img src="" alt=""></a>
+                </div>
+                <div class="content">
+                    <a href="#"></a>
+                </div>
+                <a href="#">马上学习</a>
+            </div>
+        </div>
+
+        <div class="course-item">
+            <h3>Cocos-2d引擎源码</h3>
+            <div class="class-image">
+                <img src="images/excellent/cocos2dx.jpg" alt="">
+            </div>
+            <div class="status">
+                <span>8门 </span>
+                <span>21028人学习</span>
+                <span>收藏</span>
+            </div>
+            <div class="describe">
+                <div class="teacher">
+                    <a><img src="" alt=""></a>
+                </div>
+                <div class="content">
+                    <a href="#"></a>
+                </div>
+                <a href="#">马上学习</a>
+            </div>
+        </div>
+
+        <div class="course-item">
+            <h3>Cocos-2d引擎源码</h3>
+            <div class="class-image">
+                <img src="images/excellent/cocos2dx.jpg" alt="">
+            </div>
+            <div class="status">
+                <span>8门 </span>
+                <span>21028人学习</span>
+                <span>收藏</span>
+            </div>
+            <div class="describe">
+                <div class="teacher">
+                    <a><img src="" alt=""></a>
+                </div>
+                <div class="content">
+                    <a href="#"></a>
+                </div>
+                <a href="#">马上学习</a>
+            </div>
+        </div>
+
+        <div class="course-item">
+            <h3>Cocos-2d引擎源码</h3>
+            <div class="class-image">
+                <img src="images/excellent/cocos2dx.jpg" alt="">
+            </div>
+            <div class="status">
+                <span>8门 </span>
+                <span>21028人学习</span>
+                <span>收藏</span>
+            </div>
+            <div class="describe">
+                <div class="teacher">
+                    <a><img src="" alt=""></a>
+                </div>
+                <div class="content">
+                    <a href="#"></a>
+                </div>
+                <a href="#">马上学习</a>
+            </div>
+        </div>
+
+    </div>
+    <!--战略合作企业-->
+    <div class="enterprise">
+        <div class="headline">
+            <span class="left">战略合作企业</span>
+            <span class="right">全部 >></span>
+        </div>
+        <div class="left-arrow"></div>
+        <div class="right-arrow"></div>
+        <div class="slide-container">
+
+            <div class="slider">
+                <div class="enterprise-group">
+                    <a href="#">
+                        <img src="images/enterprise/54d1d9f50e1af.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/54d18f3f14fd6.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/54feae1060a75.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/54ffb46961d0d.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/55cab4db88fee.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/55d2fa95ecda8.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/55d2fd0080bfa.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/557f8ff48f7d3.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/55078d94affa7.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/55755bc57f9c9.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/5637373968bae.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/chukong.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/juhe.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/keda.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/microsoft.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/tengxun.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/tingyun.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/enterprise/tuling.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--合作院校-->
+    <div class="colleges">
+        <div class="headline">
+
+        </div>
+        <div class="slide">
+
+        </div>
+    </div>
+    <!--媒体报道-->
+    <div class="media">
+        <div class="headline">
+
+        </div>
+        <div class="slide">
+
+        </div>
+    </div>
+
+    <!--底部信息-->
+    <footer>
+        <div class="about">
+            <div class="jike-list">
+                <dl>
+                    <dt>极客学院</dt>
+                    <dd>职业课程库</dd>
+                    <dd>知识体系图</dd>
+                    <dd>职业路径图</dd>
+                    <dd>企业课程</dd>
+                    <dd>资源下载</dd>
+                    <dd>课程标签</dd>
+                </dl>
+            </div>
+            <div class="jike-list">
+                <dl>
+                    <dt>网站服务</dt>
+                    <dd>课程需求</dd>
+                    <dd>免费体验VIP</dd>
+                    <dd>黑板报</dd>
+                    <dd>网站地图</dd>
+                </dl>
+            </div>
+            <div class="jike-list">
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd>课程需求</dd>
+                    <dd>免费体验VIP</dd>
+                    <dd>黑板报</dd>
+                    <dd>网站地图</dd>
+                </dl>
+            </div>
+            <div class="jike-list">
+                <dl>
+                    <dt>交流合作</dt>
+                    <dd>课程需求</dd>
+                    <dd>免费体验VIP</dd>
+                    <dd>黑板报</dd>
+                    <dd>网站地图</dd>
+                </dl>
+            </div>
+            <div class="share">
+                <p>极客学院，编程是一种信仰</p>
+                <a href="#" class="iphone">
+                    <img src="images/footer/iphone_ecb3977.png" alt="" width="21">
+                    <div>
+                        <p>手机客户端</p>
+                        <p>离线缓存 随时学习</p>
+                    </div>
+                </a>
+                <div class="touch">
+                    <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                </div>
+                <a href="#" class="contact">
+                    <span class="kefu"></span>
+                    <div>
+                        <p>联系我们</p>
+                        <p>工作日9：00-21:00在线</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        Copyright © 2013-2016 <strong><a href="#" target="_blank">北京优亿致远无线技术有限公司</a></strong>&nbsp;<strong><a href="#">jikexueyuan.com</a></strong>
+        All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802020210
+    </div>
+</body>
+</html>

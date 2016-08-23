@@ -1,0 +1,22 @@
+table {
+	border-collapse: collapse;
+	color: blue;
+}
+thead tr td{
+	color: green;
+	font-weight: bolder;
+	font-size: 16px;
+}
+th{
+	color: red;
+}
+
+table, th, td {
+	border: 2px solid pink;
+}
+
+th, td {
+	text-align: center;
+	width: 56px;
+	padding: 6px;
+}

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" href="styles/baidu.css">
+    <script src="scripts/libs/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="theme-panel">
+            <div class="hr-seperator"></div>
+            <div class="theme-panel-container">
+                <div class="theme-select">
+                    <ul class="theme-category" id="theme-category">
+                        <li class="theme-selector" id="hot" index="0">
+                            <span>热门</span>
+                        </li>
+                        <li class="theme-selector" id="game" index="1">
+                            <span>游戏</span>
+                        </li>
+                        <li class="theme-selector" id="cartoon" index="2">
+                            <span>卡通</span>
+                        </li>
+                        <li class="theme-selector" id="goddess" index="3">
+                            <span>女神降临</span>
+                        </li>
+                        <li class="theme-selector" id="star" index="4">
+                            <span>明星</span>
+                        </li>
+                        <li class="theme-selector" id="scenery" index="5">
+                            <span>风景</span>
+                        </li>
+                        <li class="theme-selector" id="concise" index="6">
+                            <span>简约</span>
+                        </li>
+                        <li class="theme-selector" id="fresh" index="7">
+                            <span>小清新</span>
+                        </li>
+                        <span class="vertical-border"></span>
+                        <li class="theme-selector" id="custom" index="8">
+                            <span>自定义</span>
+                        </li>
+                        <li class="theme-selector" id="recently" index="9">
+                            <span>最近使用</span>
+                        </li>
+                    </ul>
+                    <span class="opacity-setter">
+                    <span>背景透明度</span>
+                    <span class="scrollbar">
+                        <span class="scroll-block">
+                            <em class="scroll-indicator">50%</em>
+                        </span>
+                    </span>
+                    </span>
+                    <span class="no-theme">
+                    <span class="no-theme-icon"></span>
+                    <span>不使用皮肤</span>
+                    </span>
+                    <span class="hide-theme" id="hide-theme-btn">
+                    <span class="hide-theme-icon" id="hide-theme-icon"></span>
+                    <span>收起</span>
+                    </span>
+                </div>
+                <div class="theme-picture-preview">
+                    <div class="theme-pictures-container">
+                        <div id="theme-prepared">
+                            <div class="theme-pictures" id="theme-pictures"></div>
+                            <ul class="theme-page">
+                                <li class="page-nav previous"></li>
+                                <li class="page-indicator-active"></li>
+                                <li class="page-nav next"></li>
+                            </ul>
+                        </div>
+                        <div id="theme-custom">
+                            <div class="custom-picture-wrap">
+                            </div>
+                            <div class="custom-function">
+                                <div class="upload">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-preview">
+                        <div class="theme-preview-container">
+                            <div class="theme-preview-picture" id="theme-preview-picture">
+                            </div>
+                            <div class="theme-preview-ui">
+                            </div>
+                        </div>
+                        <p class="theme-preview-title">背景皮肤预览效果</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="tool left">
+                <a class="weather-forecast-panel" href="#">
+                    <span class="area">
+                    天津：
+                </span>
+                    <span class="weather icon">
+                </span>
+                    <span class="temperature">
+                    24℃
+                </span>
+                    <span class="air-quality">
+                    轻度
+                </span>
+                    <span class="pollution">
+                    137
+                </span>
+                    <div class="four-days-weather">
+                        <div class="forecast-title">
+                            <p>07-03 农历五月二十九 未来七天天气</p>
+                        </div>
+                        <div class="forecast-content">
+                            <div class="day-forecast">
+                                <p class="weather-info">今天（星期日）</p>
+                                <div class="weather-icon">
+                                    <img src="images/a2.jpg" alt="">
+                                </div>
+                                <p class="weather-info">25℃</p>
+                                <p class="weather-info">阴转多云</p>
+                                <p class="weather-info">东南风微风</p>
+                            </div>
+                            <div class="day-forecast">
+                                <p class="weather-info">明天（星期日）</p>
+                                <div class="weather-icon">
+                                    <img src="images/a1.jpg" alt="">
+                                </div>
+                                <p class="weather-info">25℃</p>
+                                <p class="weather-info">阴转多云</p>
+                                <p class="weather-info">东南风微风</p>
+                            </div>
+                            <div class="day-forecast">
+                                <p class="weather-info">后天（星期日）</p>
+                                <div class="weather-icon">
+                                    <img src="images/a0.jpg" alt="">
+                                </div>
+                                <p class="weather-info">25℃</p>
+                                <p class="weather-info">阴转多云</p>
+                                <p class="weather-info">东南风微风</p>
+                            </div>
+                            <div class="day-forecast">
+                                <p class="weather-info">大后天（星期日）</p>
+                                <div class="weather-icon">
+                                    <img src="images/a2.jpg" alt="">
+                                </div>
+                                <p class="weather-info">25℃</p>
+                                <p class="weather-info">阴转多云</p>
+                                <p class="weather-info">东南风微风</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <span class="separator"> | </span>
+                <ul>
+                    <li><a href="#">宝箱</a></li>
+                    <li><a id="change-theme-btn" href="#">换肤</a></li>
+                    <li><a href="#">工具</a></li>
+                </ul>
+            </div>
+            <span class="more right">更多产品</span>
+            <ul class="nav right">
+                <li><a href="#">糯米</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">hao123</a></li>
+                <li><a href="#">地图</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">贴吧</a></li>
+                <li id="user-login"><a href="#">张三</a></li>
+                <li id="search-config"><a href="#">设置</a></li>
+            </ul>
+            <div class="dialogue-box config">
+                <span class="up-arrow"></span>
+                <a href="#">搜索设置</a>
+                <a href="#">高级搜索</a>
+                <a href="#">关闭预测</a>
+                <a href="#">搜索历史</a>
+            </div>
+            <div class="dialogue-box user-login">
+                <span class="up-arrow"></span>
+                <a href="#">我的VIP</a>
+                <a href="#">个人中心</a>
+                <a href="#">账号设置</a>
+                <a href="#">意见反馈</a>
+                <a href="#">退出</a>
+            </div>
+        </header>
+        <div class="sidebar">
+            <p class="title">更多产品</p>
+            <a href="#">
+                <img src="images/music.png" alt="">
+                <p>音乐</p>
+            </a>
+            <a href="#">
+                <img src="images/image.png" alt="">
+                <p>图片</p>
+            </a>
+            <a href="#">
+                <img src="images/zhidao.png" alt="">
+                <p>知道</p>
+            </a>
+            <a href="#">
+                <img src="images/wenku.png" alt="">
+                <p>文库</p>
+            </a>
+            <a href="#">
+                <img src="images/bang.png" alt="">
+                <p>风云榜</p>
+            </a>
+            <a href="#">
+                <img src="images/tuiguang.png" alt="">
+                <p>百度推广</p>
+            </a>
+            <p><a href="#">全部产品>></a></p>
+        </div>
+        <!--中间搜索框部分-->
+        <div class="search-area">
+            <div class="search">
+                <div class="logo">
+                    <img src="images/logo_white_fe6da1ec.png" alt="" width="270" height="129">
+                </div>
+                <form>
+                    <span class="search-text-frame">
+                    <input type="text" class="baidu-search">
+                    <span class="camera icon"></span>
+                    </span>
+                    <input type="submit" class="submit-btn" value="百度一下">
+                </form>
+            </div>
+        </div>
+        <!--主要内容区域 以切换标签形式出现-->
+        <div class="tab-container">
+            <ul class="tab-menu">
+                <li>
+                    <span class="favorite icon"></span>我的关注
+                </li>
+                <li class="menu-focus">推荐</li>
+                <li>导航</li>
+                <li>视频</li>
+                <li>购物</li>
+                <li>
+                    <span class="config icon"></span>
+                </li>
+            </ul>
+            <ul class="tab-content">
+                <li class="con1">
+                    <div class="my-nav-label">
+                        <i class="down-arrow"></i>
+                        <span>我的导航</span>
+                        <span class="count">(0)</span>
+                        <span class="hide-tool">
+                                <a href="#">添加</a>
+                                <input type="checkbox" value="return" id="return-mode"><label
+                                    for="return-mode">返利模式</label>
+                                <a href="#">置顶</a>
+                            </span>
+                    </div>
+                    <div class="my-nav">
+                        <div class="blank-link"></div>
+                    </div>
+                    <div class="personality">
+                        <p><span class="add icon"></span>自定义</p>
+                    </div>
+                </li>
+                <li class="con2">
+                    <div class="news">
+                        <div class="news-flash-tips">
+                            <div class="left-line s-opacity-blank8"></div>
+                            <div class="tips-content">
+                                <div class="tips-icon"></div>
+                                <span>以下信息根据您的兴趣推荐</span>
+                            </div>
+                            <div class="right-line s-opacity-blank8"></div>
+                        </div>
+                        <div class="new-wrapper">
+                            <div class="news-item">
+                                <div class="news-item-title"><a>中国公开一新战机载弹试飞画面 改型或上航母</a></div>
+                                <a href="#"><img src="images/china-new-plane.jpg" alt=""></a>
+                                <p class="news-item-ref"><span class="news-source">搜狐军事</span><span class="news-time">05-26 09:30</span>
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-item-title"><a>世界最健壮运动员C罗第六足球46人入选</a></div>
+                                <div class="image-group">
+                                    <img src="images/6.jpg" alt="">
+                                    <img src="images/47.jpg" alt="">
+                                    <img src="images/48.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headline">
+                        <h3 class="headline-caption">实时热点</h3>
+                        <p class="change-news"></p>
+                        <ul>
+                            <li><a href="#">徐若瑄抱娃戴草帽</a></li>
+                            <li><a href="#">蔡依林海报早恶搞</a></li>
+                            <li><a href="#">周笔畅再过戏瘾</a></li>
+                            <li><a href="#">唯美萤火虫洞</a></li>
+                            <li><a href="#">男子猝死池中</a></li>
+                            <li><a href="#">十月乌镇戏剧节</a></li>
+                            <li><a href="#">花样男神报美容</a></li>
+                            <li><a href="#">邓紫棋当邓超儿媳</a></li>
+                            <li><a href="#">徐若瑄抱娃戴草帽</a></li>
+                            <li><a href="#">蔡依林海报早恶搞</a></li>
+                            <li><a href="#">徐若瑄抱娃戴草帽</a></li>
+                            <li><a href="#">李敏镐遭冒名诈骗</a></li>
+                            <li><a href="#">婴儿被桶十四刀</a></li>
+                            <li><a href="#">王思聪操刀真人秀</a></li>
+                            <li><a href="#">沈梦晨穿热裤吸眼睛</a></li>
+                            <li><a href="#">冒充警察考女友</a></li>
+                            <li><a href="#">女子母乳做香皂买</a></li>
+                            <li><a href="#">蔡依林哽咽谈失恋</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sites">
+                    <a class="web-site" href="#">
+                        <span class="web-logo nuomi"></span>
+                        <span class="web-name">百度糯米</span>
+                        <span class="tag-discount"></span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo jd"></span>
+                        <span class="web-name">京东商城</span>
+                        <span class="tag-discount"></span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo no1shop"></span>
+                        <span class="web-name">1号店</span>
+                        <span class="tag-discount"></span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo suning"></span>
+                        <span class="web-name">苏宁易购</span>
+                        <span class="tag-discount"></span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo sales "></span>
+                        <span class="web-name">唯品会</span>
+                        <span class="tag-discount"></span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo dang"></span>
+                        <span class="web-name">当当网</span>
+                        <span class="tag-discount"></span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo microsoft"></span>
+                        <span class="web-name">Bootstrap</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo adobe"></span>
+                        <span class="web-name">素材天下</span>
+                    </a>
+                    <a class="web-site" href="adobe">
+                        <span class="web-logo microsoft"></span>
+                        <span class="web-name">Adobe..</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo abobe"></span>
+                        <span class="web-name">Firework..</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo microsoft"></span>
+                        <span class="web-name">Dream...</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo microsoft"></span>
+                        <span class="web-name">idea</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo microsoft"></span>
+                        <span class="web-name">GIMP</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo microsoft"></span>
+                        <span class="web-name">FRONT</span>
+                    </a>
+                    <a class="web-site " href="#">
+                        <span class="web-logo chrome"></span>
+                        <span class="web-name">Chrome</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo microsoft"></span>
+                        <span class="web-name">谷歌浏览器</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo tomcat"></span>
+                        <span class="web-name">tomcat</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo linux"></span>
+                        <span class="web-name">ubuntu </span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo linux"></span>
+                        <span class="web-name">红旗</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo microsoft"></span>
+                        <span class="web-name">jstl标签 </span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo microsoft"></span>
+                        <span class="web-name">ubuntu</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo microsoft"></span>
+                        <span class="web-name">慕课网</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo baidu"></span>
+                        <span class="web-name">百度VIP</span>
+                    </a>
+                    <a class="web-site" href="#">
+                        <span class="web-logo microsoft"></span>
+                        <span class="web-name">微软商店</span>
+                    </a>
+                </li>
+                <li class="video">
+                    <div class="video-intro">
+                        <div class="video-picture">
+                            <img src="images/video/secrete-of-father.jpg" alt="">
+                        </div>
+                        <div class="video-description">
+                            <p class="video-caption"><a href="#">父亲的身份</a></p>
+                            <span class="video-popular">
+                                <span class="rank-star"></span>
+                            </span>
+                            <span class="video-score">7.6</span>
+                        </div>
+                        <div class="video-category"></div>
+                        <div class="video-like video-tool"></div>
+                        <div class="video-dislike video-tool"></div>
+                    </div>
+                    <div class="video-intro">
+                        <div class="video-picture">
+                            <img src="images/video/little-husband.jpg" alt="">
+                        </div>
+                        <div class="video-description">
+                            <p class="video-caption"><a href="#">小丈夫</a></p>
+                            <span class="video-popular">
+                                <span class="rank-star"></span>
+                            </span>
+                            <span class="video-score">6.8</span>
+                        </div>
+                        <div class="video-category"></div>
+                        <div class="video-like video-tool"></div>
+                        <div class="video-dislike video-tool"></div>
+                    </div>
+                    <div class="video-intro">
+                        <div class="short-intro">
+                            <img src="images/video/basketball.jpg" alt="">
+                            <div class="video-caption-short">
+                                <a href="#">小米无人机发布全过程回顾</a>
+                            </div>
+                            <div class="video-like"></div>
+                            <div class="video-dislike"></div>
+                        </div>
+                        <div class="short-intro">
+                            <img src="images/video/fury-women.jpg" alt="">
+                            <div class="video-caption-short">
+                                <a href="#">小米无人机发布全过程回顾</a>
+                            </div>
+                            <div class="video-like"></div>
+                            <div class="video-dislike"></div>
+                        </div>
+                    </div>
+                    <div class="video-intro">
+                        <div class="short-intro">
+                            <img src="images/video/nine.jpg" alt="">
+                            <div class="video-caption-short">
+                                <a href="#">小米无人机发布全过程回顾</a>
+                            </div>
+                            <div class="video-like"></div>
+                            <div class="video-dislike"></div>
+                        </div>
+                        <div class="short-intro">
+                            <img src="images/video/sister.jpg" alt="">
+                            <div class="video-caption-short">
+                                <a href="#">小米无人机发布全过程回顾</a>
+                            </div>
+                            <div class="video-like"></div>
+                            <div class="video-dislike"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="shopping">
+                    <div class="goods-intro">
+                        <div class="goods-picture">
+                            <img src="images/video/tv.jpg" alt="">
+                        </div>
+                        <div class="goods-text-desc">
+                            <p class="goods-name">LG 23.8英寸IPS滤蓝光液</p>
+                            <p class="goods-price">历史最低 <em>直降300元</em></p>
+                        </div>
+                    </div>
+                    <div class="goods-intro">
+                        <div class="goods-picture">
+                            <img src="images/video/sheet.jpg" alt="">
+                        </div>
+                        <div class="goods-text-desc">
+                            <p class="goods-name">LG 23.8英寸IPS滤蓝光液</p>
+                            <p class="goods-price">历史最低 <em>直降300元</em></p>
+                        </div>
+                    </div>
+                    <div class="goods-intro">
+                        <div class="goods-picture">
+                            <img src="images/video/mum.jpg" alt="">
+                        </div>
+                        <div class="goods-text-desc">
+                            <p class="goods-name">LG 23.8英寸IPS滤蓝光液</p>
+                            <p class="goods-price">历史最低 <em>直降300元</em></p>
+                        </div>
+                    </div>
+                    <div class="goods-intro">
+                        <a class="shopping-bsword" href="#">
+                            <p>1元得iPhone SE</p>
+                            <span>其他超值商品 1元可得</span>
+                            <div class="buttondesc">去看看</div>
+                        </a>
+                        <div class="shopping-bsmall">
+                            <a class="fanmall" href="#">
+                                <p>返利商城</p>
+                            </a>
+                            <ul class="shopping-site-link">
+                                <li><a href="#">京东商城</a></li>
+                                <li><a href="#">百度糯米</a></li>
+                                <li><a href="#">1号店</a></li>
+                                <li><a href="#">当当网</a></li>
+                                <li><a href="#">蘑菇街</a></li>
+                                <li><a href="#">唯品会</a></li>
+                                <li><a href="#">聚美优品</a></li>
+                                <li><a href="#">国美在线</a></li>
+                                <li><a href="#">苏宁易购</a></li>
+                                <li><a href="#">更多</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <p><a href="#">设为首页</a>
+                <span>©2016&nbsp;Baidu&nbsp;</span>
+                <a href="#">使用百度前必读</a>
+                <a href="#">意见反馈</a>
+                <span>京ICP证030173号&nbsp;</span>
+                <img width="13" height="16" src="images/copy_right_24.png">
+            </p>
+            <div class="recordcode"><a href="#"><i></i>京公网安备11000002000001号</a></div>
+        </footer>
+    </div>
+    <script src="scripts/bd.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/themes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.stage {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+    perspective-origin: -100px 0;
+    -webkit-perspective-origin: -100px 0;
+    perspective: 3000px;
+    -webkit-perspective: 3000px;
+}
+
+.cube {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-30deg);
+    animation: 6s spin2 linear infinite;
+
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(-30deg) rotateY(-30deg);
+    -webkit-animation: 6s spin2 linear infinite;
+}
+/*设置动画效果*/
+
+@keyframes spin2 {
+    0% {
+        transform: rotateX(0deg)
+    }
+    25% {
+        transform: rotateY(180deg)
+    }
+    75% {
+        transform: rotateZ(90deg)
+    }
+    100% {
+        transform: rotateX(90deg)
+    }
+}
+
+@-webkit-keyframes spin2 {
+    0% {
+        -webkit-transform: rotateX(0deg)
+    }
+    25% {
+        -webkit-transform: rotateY(180deg)
+    }
+    75% {
+        -webkit-transform: rotateZ(90deg)
+    }
+    100% {
+        -webkit-transform: rotateX(90deg)
+    }
+}
+/*魔方6个面的共同样式*/
+
+.cube > div {
+    border: 1px #fff solid;
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    /*设置透明效果*/
+    /*opacity: 0.8;*/
+}
+/*每个面上小方块的样式*/
+
+.cube div div {
+    width: 96px;
+    height: 96px;
+    float: left;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+/*白色面*/
+
+.cube .white {
+    transform: translateZ(150px);
+    -webkit-transform: translateZ(150px);
+}
+
+.white div {
+    background-color: white;
+}
+/*橙色面*/
+
+.cube .orange {
+    transform: rotateX(180deg) translateZ(150px);
+    -webkit-transform: rotateX(180deg) translateZ(150px);
+}
+
+.orange div {
+    background-color: orange;
+}
+/*蓝色面*/
+
+.cube .blue {
+    transform: rotateY(-90deg) translateZ(150px);
+    -webkit-transform: rotateY(-90deg) translateZ(150px);
+}
+
+.blue div {
+    background-color: blue;
+}
+/*红色面*/
+
+.cube .red {
+    transform: rotateY(90deg) translateZ(150px);
+    -webkit-transform: rotateY(90deg) translateZ(150px);
+}
+
+.red div {
+    background-color: red;
+}
+/*黄色面*/
+
+.cube .yellow {
+    transform: rotateX(90deg) translateZ(150px);
+    -webkit-transform: rotateX(90deg) translateZ(150px);
+}
+
+.yellow div {
+    background-color: yellow;
+}
+/*绿色面*/
+
+.cube .green {
+    transform: rotateX(-90deg) translateZ(150px);
+    -webkit-transform: rotateX(-90deg) translateZ(150px);
+}
+
+.green div {
+    background-color: green;
+}

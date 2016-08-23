@@ -1,0 +1,52 @@
+/*头部样式*/
+header{
+    background-color: orange;
+    height: 100px;
+}
+/*主体内容的样式*/
+article{
+    background: lightyellow;
+    height: 500px;
+    overflow: hidden;
+    min-width: 450px;
+}
+/*网页底部样式*/
+footer{
+    background-color: yellow;
+    height: 100px;
+}
+/*左侧边栏样式*/
+article .left{
+    background: lawngreen;
+    float: left;
+    width: 150px;
+    margin-left: -100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+
+}
+/*右侧边栏样式*/
+article .right{
+    background: aquamarine;
+    float: left;
+    width: 100px;
+    margin-left: -100px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+/*内容区域样式*/
+article .main .inner{
+    background: cadetblue;
+    margin-left: 150px;
+    margin-right: 100px;
+    min-width: 300px;
+}
+
+article .main{
+    background: skyblue;
+    float: left;
+    width: 100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}

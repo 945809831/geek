@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/*定义整个画布*/
+.whale {
+    width: 700px;
+    height: 500px;
+    background-color: grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -350px;
+}
+/*画鲸鱼的头部*/
+.head {
+    position: absolute;
+    left: 30px;
+    top: 240px;
+    width: 0px;
+    height: 0px;
+    border-width: 200px;
+    border-style: solid;
+    border-color: rgb(95, 158, 238) rgb(95, 158, 238) transparent transparent;
+    background-color: transparent;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+/*画鲸鱼的躯干*/
+.trunk {
+    position: absolute;
+    top: 356px;
+    right: 189px;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid rgb(95, 158, 238);
+    transform: scale(1.6, 1.1);
+    -webkit-transform: scale(1.6, 1.1);
+    -moz-transform: scale(1.6, 1.1);
+}
+/*画鲸鱼的尾巴*/
+.tail {
+    position: absolute;
+    top: 340px;
+    right: 110px;
+    border-right: 80px solid rgb(95, 158, 238);
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    animation: shake 1s linear 2s infinite alternate;
+    -webkit-animation: shake 1s linear 2s infinite alternate;
+    -moz-animation: shake 1s linear 2s infinite alternate;
+}
+/*画鲸鱼的眼睛*/
+.eye {
+    position: absolute;
+    top: -141px;
+    left: -25px;
+    width: 60px;
+    height: 60px;
+    background-color: whitesmoke;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+}
+
+/*画鲸鱼的瞳孔*/
+.pupil {
+    position: absolute;
+    top: 5px;
+    left: -1px;
+    width: 45px;
+    height: 45px;
+    background-color: darkblue;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    animation: moves 1s linear 2s infinite alternate;
+    -webkit-animation: moves 1s linear 2s infinite alternate;
+    -moz-animation: moves 1s linear 2s infinite alternate;
+}
+/*画鲸鱼的嘴巴*/
+.mouth {
+    position: absolute;
+    top: -211px;
+    left: -115px;
+    border-right: 80px solid white;
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    transform: rotate(239deg) scale(1.2, 0.4);
+    -webkit-transform: rotate(239deg) scale(1.2, 0.4);
+    -moz-transform: rotate(239deg) scale(1.2, 0.4);
+    animation: open 1s linear 2s infinite alternate;
+    -webkit-animation: open 1s linear 2s infinite alternate;
+    -moz-animation: open 1s linear 2s infinite alternate;
+}
+
+@keyframes shake
+{
+    from {
+        transform: rotate(-25deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes moves {
+    from {
+        top: 1px;
+    }
+    to {
+        top: 13px;
+    }
+}
+
+@keyframes open {
+    0% {
+        transform: rotate(239deg) scale(1.2, 0.0);
+    }
+    25% {
+        transform: rotate(239deg) scale(1.2, 0.1);
+    }
+    75% {
+        transform: rotate(239deg) scale(1.2, 0.2);
+    }
+    100% {
+        transform: rotate(239deg) scale(1.2, 0.3);
+    }
+}
+
+/* Safari 和 Chrome */
+/*尾巴摇动*/
+@-webkit-keyframes shake
+{
+    from {
+        -webkit-transform: rotate(-25deg);
+    }
+    to {
+        -webkit-transform: rotate(-10deg);
+    }
+}
+
+/*眼睛转动*/
+@-webkit-keyframes moves {
+    from {
+        top: 1px;
+    }
+    to {
+        top: 13px;
+    }
+}
+/*张闭嘴*/
+@-webkit-keyframes open {
+    0% {
+        -webkit-transform: rotate(239deg) scale(1.2, 0.0);
+    }
+    25% {
+        -webkit-transform: rotate(239deg) scale(1.2, 0.1);
+    }
+    75% {
+        -webkit-transform: rotate(239deg) scale(1.2, 0.2);
+    }
+    100% {
+        -webkit-transform: rotate(239deg) scale(1.2, 0.3);
+    }
+}
+/*Firefox*/
+@-moz-keyframes shake
+{
+    from {
+        -moz-transform: rotate(-25deg);
+    }
+    to {
+        -moz-transform: rotate(-10deg);
+    }
+}
+
+@-moz-keyframes moves {
+    from {
+        top: 1px;
+    }
+    to {
+        top: 13px;
+    }
+}
+
+@-moz-keyframes open {
+    0% {
+        -moz-transform: rotate(239deg) scale(1.2, 0.0);
+    }
+    25% {
+        -moz-transform: rotate(239deg) scale(1.2, 0.1);
+    }
+    75% {
+        -moz-transform: rotate(239deg) scale(1.2, 0.2);
+    }
+    100% {
+        -moz-transform: rotate(239deg) scale(1.2, 0.3);
+    }
+}

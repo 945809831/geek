@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+</head>
+
+<body>
+<div class="body">
+    <!-- 顶部导航栏 -->
+    <header>
+        <div id="nav">
+            <a href="http://www.nuomi.com/?cid=002540" class="menu">糯米</a>
+            <a href="http://news.baidu.com/" class="menu">新闻</a>
+            <a href="http://www.hao123.com/" class="menu">hao123</a>
+            <a href="http://map.baidu.com/" class="menu">地图</a>
+            <a href="http://v.baidu.com/?fr=bd" class="menu">视频</a>
+            <a href="http://tieba.baidu.com/" class="menu">贴吧</a>
+            <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" class="menu">登录</a>
+            <a href="http://www.baidu.com/gaoji/preferences.html" class="menu">设置</a>
+            <a href="http://www.baidu.com/more/" id="more">更多产品</a>
+        </div>
+    </header>
+    <!--百度logo和搜索框-->
+    <article>
+        <div>
+            <div id="baidu_logo">
+                <!-- 百度图标 -->
+                <img src="images/bd_logo1.png" height="129"/>
+            </div>
+            <form>
+                <span>
+
+                    <!-- 百度搜索输入框和百度一下按钮 -->
+                    <input name="baidu_search" id="baidu_search">
+                     <i id="photo"></i>
+                </span>
+                <input id="baidu_btn" type="submit" value="百度一下">
+            </form>
+        </div>
+    </article>
+
+    <!--页面的底部-->
+    <footer>
+        <div id="ft-wrapper">
+            <!-- 第一个二维码 -->
+            <div class="qrcode-img">
+                <img src="images/zbios.png" width="60" height="60"/>
+            </div>
+            <div class="qrcode-text">
+                <p><b>手机百度</b></p>
+                <p>快人一步</p>
+            </div>
+            <!-- 第二个二维码 -->
+            <div class="qrcode-img" id='qrcode-img2'>
+                <img src="images/nuomi.png" width="60" height="60"/>
+            </div>
+            <div class="qrcode-text">
+                <p><b>百度糯米</b></p>
+                <p>一元大餐</p>
+            </div>
+            <!-- 底部关于百度信息及公安登记信息 -->
+            <div>
+                <p id="about">
+                    <a href="">把百度设为主页</a>
+                    <a href="">关于百度</a>
+                    <a href="">About Baidu</a>
+                </p>
+                <p id="info">
+                    ©<span>2016&nbsp;Baidu&nbsp;</span><a href="">使用百度前必读</a>
+                    <a href="">意见反馈</a>京ICP证030173<i id="icr_logo"></i>
+                </p>
+                <p><i id="police_logo"></i>京公网安备11000002000001号</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+
+</html>

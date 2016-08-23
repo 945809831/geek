@@ -1,0 +1,17 @@
+/*设置登录背景为黑色*/
+body{
+    background-color: #5e5e5e;
+}
+/*登录窗口的大小及背景颜色，使用圆角边框*/
+.form-container{
+    width: 450px;
+    margin-top: 150px;
+    padding-top: 15px; /*设置登录窗口顶部padding以便对齐其余三边的默认padding*/
+    background-color: #faebcc;
+    border-radius: 6px;
+}
+/*设置“忘记密码”链接的行高以和左边的“记住我”对齐*/
+.pull-right{
+    line-height: 40px;
+}
+

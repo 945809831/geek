@@ -1,0 +1,55 @@
+.header{
+    background: url(../images/sweety.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    text-align: center;
+    color: white;
+}
+
+/*.header  {*/
+    /*padding: 10px;*/
+    /*background-color: white;*/
+    /*color: black;*/
+    /*font-size: 20px;*/
+    /*opacity: 0.5;*/
+/*}*/
+/*新菜、推广、优惠三个方块中显示的圆形图标的样式*/
+.new-dishes, .marketing, .discount{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+/*新菜图标*/
+.new-dishes {
+    background: url(../images/sprites.png) no-repeat -10px -148px;
+}
+/*推广图标*/
+.marketing {
+    background: url(../images/sprites.png) no-repeat -10px -258px;
+}
+/*优惠图标*/
+.discount {
+    background: url(../images/sprites.png) no-repeat -10px -368px;
+}
+.desc{
+    margin: 10px auto;
+    background: rgb(246, 90, 90);
+}
+.desc p{
+    text-align: center;
+}
+.pic{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+footer .container{
+    background:  rgb(246, 90, 90);
+    color: #e7e7e7;
+}
+
+footer a:link{
+    text-decoration: none;
+    color: white;
+}

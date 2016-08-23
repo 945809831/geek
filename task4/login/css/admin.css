@@ -1,0 +1,22 @@
+/*全局背景颜色*/
+body{
+    background-color: cornsilk;
+}
+/*管理员图片大小*/
+.admin{
+    width: 96px;
+    height: 96px;
+}
+/*设置容器上边框*/
+.container{
+    margin-top: 100px;
+}
+
+/*缩小图片和底部导航间的空隙*/
+.thumbnail{
+    margin-bottom: 10px;
+}
+
+.col-sm-10 {
+    margin-left: -15px;
+}

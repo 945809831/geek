@@ -1,0 +1,320 @@
+.top {
+    height: 40px;
+    background-color: rgb(246, 90, 91);
+    line-height: 40px;
+}
+
+.top a{
+    text-decoration: none;
+}
+
+.top a{
+    color: white;
+}
+/*设置顶栏三部分内容左右及居中对齐*/
+.top .container {
+    text-align: center;
+}
+
+.top  .left {
+    float: left;
+}
+
+.top  .right{
+    float: right;
+}
+
+.top  span {
+    padding: 0 10px;
+}
+/*爱美食文字旁的图标样式*/
+.top .love-food{
+    display: inline-block;
+    width: 34px;
+    height: 41px;
+    vertical-align: top;
+    background: url(../images/sprites.png) no-repeat -10px -478px;
+}
+
+/*==============================================================*/
+header {
+    /*头部背景图片*/
+    background: url(../images/sweety.png) no-repeat -10px  -10px;
+    text-align: center;
+    color: white;
+}
+
+nav ul li{
+    display: inline-block;
+    background-color: white;
+    opacity: 0.5;
+
+}
+
+nav ul li a{
+    opacity: 1;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+nav ul li a:link{
+    color: black;
+}
+nav ul li a:hover{
+    color: white;
+}
+nav ul li:hover{
+    background-color:rgb(32, 64, 87) ;
+}
+/*喜欢收藏的样式*/
+.bookmark{
+    color: rgb(246, 90, 90);
+}
+
+.give-advice{
+    background-color:rgb(246, 90, 90) ;
+}
+
+/*中间加热咖啡圆形图标样式*/
+.add-to-favorite {
+    display: inline-block;
+    width: 148px;
+    height: 148px;
+    cursor: pointer;
+    background: url(../images/sprites.png) no-repeat 0 0;
+}
+/*使用bootstrap的栅格系统在一行中排列图标*/
+.favorite .row .col-sm-4 {
+    padding: 10px 20px;
+}
+/*新菜、推广、优惠三个方块的样式*/
+.favorite div div div {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    opacity: 0.5;
+}
+/*新菜、推广、优惠三个方块中显示的圆形图标的样式*/
+.favorite div:nth-child(1) div a i {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+/*新菜图标*/
+.new-dishes {
+    background: url(../images/sprites.png) no-repeat -10px -148px;
+}
+/*推广图标*/
+.marketing {
+    background: url(../images/sprites.png) no-repeat -10px -258px;
+}
+/*优惠图标*/
+.discount {
+    background: url(../images/sprites.png) no-repeat -10px -368px;
+}
+
+/*========================================================================*/
+/*第二部分的样式*/
+.first {
+    text-align: center;
+}
+
+.first h1 {
+    color: rgb(246, 90, 90);
+}
+
+/*设置菜单图片框的样式*/
+.first .container .menu {
+    width: 350px;
+    height: 268px;
+    background-color: rgb(246, 90, 90);
+    margin: 15px;
+    padding: 0;
+}
+
+/*设置菜单介绍文字样式*/
+.first .container .discription {
+    width: 350px;
+    height: 268px;
+    margin: 15px;
+    padding: 10px 10px;
+    background-color: rgb(32, 64, 87);
+    color: white; /*设置字体颜色为白色*/
+    text-align: left;
+}
+
+/*菜名居中显示*/
+.discription h2 {
+    text-align: center;
+}
+
+/*价格右对齐*/
+.discription .price {
+    text-align: right;
+}
+
+.discription p {
+    font-size: 18px;
+}
+
+/*水平分割线*/
+.hr {
+    width: 200px;
+    height: 2px;
+    margin: 0px auto;
+    border-bottom: 3px solid #000000;
+}
+/*特殊感谢一段的样式*/
+.thanks-words {
+    color: black;
+    width: 800px;
+    margin: 20px auto;
+    font-size: 16px;
+    text-indent: 1cm;
+}
+
+/*==============================================================*/
+/*第二部分样式*/
+.second {
+    background-color: rgb(106, 115, 124);
+    padding: 90px 0;
+    text-align: center;
+}
+
+.second div {
+    display: inline-block;
+}
+/*说明文字的标题-精细的沙漠*/
+.second .description h1 {
+    text-align: left;
+    color: red;
+}
+/*下面的小标题*/
+.second .description h5 {
+    margin: 20px 0;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+}
+/*说明文字*/
+.second .description p {
+    color: white;
+    font-size: 18px;
+    text-indent: 1cm;
+    text-align: left;
+}
+
+/*=================================================================*/
+/*第三部分样式*/
+.three {
+    padding: 90px 0;
+    text-align: center;
+}
+/*标题设为红色*/
+.three h1 {
+    color: red;
+}
+/*内容居中显示*/
+.three .container {
+    margin: 40px auto;
+}
+/*设置每个图片框的边框*/
+.col-sm-3 {
+    border: 1px solid rgb(235, 235, 235);
+}
+/*四个图片框容器的宽度*/
+.food-list {
+    width: 253px;
+}
+
+/*菜单图片标题样式*/
+.title {
+    margin: 0;
+    line-height: 180%;
+    color: white;
+    background: rgb(32, 64, 87);
+}
+/*图片描述文字的样式*/
+.desc {
+    text-align: left;
+    text-indent: 1cm;
+    margin: 20px 0;
+}
+
+.more {
+    text-align: left;
+}
+
+.more a:link {
+    color: red;
+}
+
+/*===================================================================*/
+/*底部样式*/
+footer {
+    padding: 30px 0;
+    background-color: rgb(106, 115, 124);
+}
+
+footer .container {
+    margin: 5px auto;
+}
+
+h4 {
+    color: rgb(246, 90, 91);
+}
+/*页脚链接文字设为白色*/
+footer a {
+    color: white;
+}
+
+/*==============================================================*/
+/*底边红色边栏样式*/
+.bottom {
+    height: 40px;
+    color: white;
+    background-color: rgb(246, 90, 91);
+    text-align: center;
+}
+
+ .copyright {
+     line-height: 40px;
+     vertical-align: bottom;
+}
+ /*右侧网站图标的样式*/
+.icon{
+    float: right;
+}
+/*设置链接的网站图标样式*/
+.icon a i {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    /*vertical-align:middle;*/
+}
+
+ .icon a:nth-child(1) i {
+    background: url(../images/sprites.png) no-repeat -10px -575px;
+}
+
+ .icon a:nth-child(2) i {
+    background: url(../images/sprites.png) no-repeat -102px -529px;
+}
+
+ .icon a:nth-child(3) i {
+    background: url(../images/sprites.png) no-repeat -56px -529px;
+}
+
+ .icon a:nth-child(4) i {
+    background: url(../images/sprites.png) no-repeat -10px -529px;
+}
+
+ .icon a:nth-child(5) i {
+    background: url(../images/sprites.png) no-repeat -100px -478px;
+}
+
+ .icon a:nth-child(6) i {
+    background: url(../images/sprites.png) no-repeat -54px -478px;
+}

@@ -1,0 +1,18 @@
+.container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1, h3{
+    color: #D00404;
+}
+
+.answer{
+    color: #065806;
+}
+
+.answer:before{
+    content: "答：";
+    color: #3AFF66;
+    font-size: 24px;
+}

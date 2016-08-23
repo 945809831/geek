@@ -1,0 +1,96 @@
+.board {
+  width: 840px;
+  margin: 0 auto;
+  background: green;
+  font-family: "黑体";
+}
+.bus-info {
+  padding: 10px 20px 10px 20px;
+  background: red;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #d65128, #efdd00, #d65128);
+  background: -moz-linear-gradient(left, #d65128, #efdd00, #d65128);
+  background: linear-gradient(left, #d65128, #efdd00, #d65128);
+  width: 800px;
+  height: 70px;
+}
+.bus-number {
+  float: left;
+  width: 130px;
+  color: black;
+  line-height: 70px;
+  font-size: 48px;
+  font-weight: bolder;
+}
+.traval-range {
+  float: left;
+  width: 455px;
+  height: 70px;
+}
+.traval-range .station-info {
+  display: inline-block;
+}
+.traval-range .station-info .station-name {
+  line-height: 46.66666667px;
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+}
+.traval-range .station-info .departure-time {
+  line-height: 23.33333333px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+.traval-range .start {
+  float: left;
+}
+.traval-range .end {
+  float: left;
+}
+.traval-range .right-arrow {
+  float: left;
+  width: 150px;
+  height: 70px;
+  display: inline-block;
+  position: relative;
+}
+.traval-range .right-arrow .arrow-body {
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  background: white;
+}
+.traval-range .right-arrow .arrow {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 15px;
+  left: 110px;
+  border-left: 40px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.ticket-price {
+  float: left;
+  line-height: 70px;
+  font-size: 18px;
+}
+.bus-stops {
+  width: 800px;
+  height: auto;
+  padding: 10px 20px 0 20px;
+  background: #0570b8;
+}
+.bus-stops ul {
+  padding: 0;
+}
+.bus-stops ul li {
+  width: 18px;
+  height: 120px;
+  display: inline-block;
+  text-decoration: none;
+  writing-mode: vertical-lr;
+}

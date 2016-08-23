@@ -1,0 +1,120 @@
+@side-color: rgb(214, 81, 40);
+@center-color: rgb(239, 221, 0);
+@base-color: rgb(5, 112, 184);
+@title-height: 70px;
+.set-padding(@top, @right, @bottom, @left) {
+    padding: @top @right @bottom @left;
+}
+
+.set-div-center(@width) {
+    width: @width;
+    margin: 0 auto;
+}
+
+.set-size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+.set-position(@top, @left) {
+    position: absolute;
+    top: @top;
+    left: @left;
+}
+
+// 各个元素具体的css定义
+.board {
+    .set-div-center(840px);
+    background: green;
+    font-family: "黑体";
+}
+
+.bus-info {
+    .set-padding(10px, 20px, 10px, 20px);
+    background: red;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, @side-color, @center-color, @side-color);
+    background: -moz-linear-gradient(left, @side-color, @center-color, @side-color);
+    background: linear-gradient(left, @side-color, @center-color, @side-color);
+    width: 800px;
+    height: @title-height;
+}
+
+.bus-number {
+    float: left;
+    width: 130px; 
+    color: black;
+    line-height: @title-height;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.traval-range {
+    float: left;
+    width: 455px;
+    height: @title-height;
+    .station-info {
+        display: inline-block;
+        .station-name {
+            line-height: 2*@title-height / 3;
+            font-size: 24px;
+            text-align: center;
+            margin: 0;
+        }
+        .departure-time {
+            line-height: @title-height / 3;
+            font-size: 16px;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    .start {
+        float: left;
+    }
+    .end {
+        float: left;
+    }
+    .right-arrow {
+        float: left;
+        width: 150px;
+        height: @title-height;
+        display: inline-block;
+        position: relative;
+        .arrow-body {
+            .set-size(100px, 10px);
+            .set-position(30px, 15px);
+            background: white;
+        }
+        .arrow {
+            .set-size(0px, 0px);
+            .set-position(15px, 110px);
+            border-left: 40px solid white;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+    }
+}
+
+.ticket-price {
+    float: left;
+    line-height: @title-height;
+    font-size: 18px;
+}
+
+.bus-stops {
+    .set-size(800px, auto);
+    .set-padding(10px, 20px, 0, 20px);
+    background: @base-color;
+    // margin:  0;
+    ul {
+        padding: 0;
+        li {
+            width: 18px;
+            height: 120px;
+            display: inline-block;
+            text-decoration: none;
+            writing-mode: vertical-lr;
+        }
+    }
+}
+

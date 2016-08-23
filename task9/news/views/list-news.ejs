@@ -1,0 +1,20 @@
+<%
+for(var i = 0; i < news.length; i++){
+    var item = news[i];
+%>
+<tr>
+    <td><%=item.id %></td>
+    <td><%=item.title%></td>
+    <td><%=item.newsDate%></td>
+    <td><%=item.picture%></td>
+    <td><%=item.abstract%></td>
+    <td><%=item.category%></td>
+    <td><%=item.label%></td>
+    <td><%=item.likes%></td>
+    <td><div class="btn-group">
+            <button type="button" class="btn edit-item" data-id="<%=item.id%>">修改</button>
+            <button type="button" class="btn delete-item" data-id="<%=item.id%>">删除</button>
+        </div>
+    </td>
+</tr>
+<%}%>

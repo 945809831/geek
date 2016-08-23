@@ -1,0 +1,17 @@
+
+table{
+	min-width: 1200px;
+}
+
+td{
+	max-width: 150px;
+	overflow: hidden;
+}
+
+.news-input{
+	margin-top: 20px;
+}
+
+#result{
+	display: none;
+}

@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(15, 120, 147);
+}
+
+.red{
+    color: red; /*网页中出现的红色字体*/
+}
+/*网页头部（包括Logo和导航栏）样式*/
+header{
+    position: relative;
+    width: 710px;
+    margin: 30px auto  0px auto;; /*顶部预留间隙*/
+    background-color: white;     /*设置背景色，以免和body背景一样*/
+    /*设置顶部的左右的圆角，没使用原版网页贴图的办法*/
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+/*网页Logo图片的样式*/
+header img{
+    width: 180px;
+    height: 76px;
+    margin: 4px 0px 0px 10px;
+
+}
+/*导航栏样式，绝对定位、右侧底部对齐*/
+#nav {
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+}
+/*顶部导航栏链接（注册  登录 收藏本站）的样式*/
+header ul li{
+    display: inline;
+    margin: auto 4px;
+    color: red;     /*？？设置导航链接字体颜色，不起作用？？？*/
+}
+/*注册信息提交表单样式，宽度710px，居中对齐，白色背景*/
+form{
+    width: 710px;
+    margin: 0px auto;
+    background-color: white;
+}
+
+table{
+    margin: 0 22px;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    border-color: grey;
+}
+/*表格标题栏*/
+caption{
+    margin: 15px auto;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*表格头部说明信息（第一行）样式，文字居中对齐*/
+#tips{
+    text-align: center;
+}
+
+/*表格中单元格的样式*/
+td{
+    font-size:  13px;
+    padding: 3px;
+}
+/*表单中文本框控件的样式*/
+input{
+    border: 2px inset;
+    width: 243px;
+    height: 21px;
+}
+
+fieldset{
+    margin-bottom: 5px;
+    border: hidden;
+    line-height: 18px;
+}
+legend{
+    color: black;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+/*表单多选按钮的样式*/
+input[type="checkbox"]{
+    width: 13px;
+    height: 13px;
+}
+
+/*底部提交按钮的样式*/
+tfoot {
+    height: 85px;
+    text-align: center;
+}
+
+/*页面底部信息样式，文字居中显示，左下角和右下角圆角边*/
+footer{
+    width: 710px;
+    margin: 0 auto 30px auto ;/*留30px蓝色背景*/
+    padding-bottom: 40px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+#submit-button{
+    width: 86px;
+    height: 21px;
+    margin: 32px auto;
+
+}
+
+
+
+.title{
+    background-color: rgb(238, 238, 238);
+    color: #003399;
+    font-weight: bold;
+}
+/*表格第一列单元格样式*/
+.left{
+    width: 20%;
+    text-align: right;
+}
+/*填写说明部分使用蓝色字体*/
+.hint{
+    color: blue;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+</head>
+
+<body>
+<!-- 顶部导航栏 -->
+<div class="container">
+    <header>
+        <div id="nav">
+            <a href="http://www.nuomi.com/?cid=002540" class="menu">糯米</a>
+            <a href="http://news.baidu.com/" class="menu">新闻</a>
+            <a href="http://www.hao123.com/" class="menu">hao123</a>
+            <a href="http://map.baidu.com/" class="menu">地图</a>
+            <a href="http://v.baidu.com/?fr=bd" class="menu">视频</a>
+            <a href="http://tieba.baidu.com/" class="menu">贴吧</a>
+            <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" class="menu">登录</a>
+            <a href="http://www.baidu.com/gaoji/preferences.html" class="menu">设置</a>
+            <a href="http://www.baidu.com/more/" id="more">更多产品</a>
+        </div>
+    </header>
+    <!--百度logo和搜索框-->
+    <article>
+        <div class="form-wrap">
+            <div id="baidu_logo">
+                <!-- 百度图标 -->
+                <img src="images/bd_logo1.png" />
+            </div>
+            <form>
+                <span>
+                <!-- 百度搜索输入框和百度一下按钮 -->
+                <input name="badu_search" id="baidu_search">
+                <i id="photo"></i>
+                </span>
+                <input id="baidu_btn" type="submit" value="百度一下">
+            </form>
+        </div>
+    </article>
+
+    <!--页面的底部-->
+    <footer>
+        <!-- 第一个二维码 -->
+        <div class="qrcode-img">
+            <img src="images/zbios.png" width="60" height="60"/>
+        </div>
+        <div class="qrcode-text">
+            <p><b>手机百度</b></p>
+            <p>快人一步</p>
+        </div>
+        <!-- 第二个二维码 -->
+        <div class="qrcode-img" id='qrcode-img2'>
+            <img src="images/nuomi.png" width="60" height="60"/>
+        </div>
+        <div class="qrcode-text">
+            <p><b>百度糯米</b></p>
+            <p>一元大餐</p>
+        </div>
+        <!-- 底部关于百度信息及公安登记信息 -->
+        <div>
+            <p id="about">
+                <a href="">把百度设为主页</a>
+                <a href="">关于百度</a>
+                <a href="">About Baidu</a>
+            </p>
+            <p id="info">
+                ©2016&nbsp;Baidu&nbsp;<a href="">使用百度前必读</a>
+                <a href="">意见反馈</a>京ICP证030173<i id="icr_logo"></i>
+            </p>
+            <p><i id="police_logo"></i>京公网安备11000002000001号</p>
+        </div>
+    </footer>
+</div>
+<!--=================================================================================-->
+<!--手机版容器-->
+<div class="m-container">
+    <div class="header">
+        <div class="weather">
+            <div class="weather-icon">
+
+            </div>
+            <div class="weather-num">16°</div>
+            <div class="weather-status">
+                <p>天津</p>
+                <p>空气&nbsp;93</p>
+            </div>
+            <i class="icon-down"></i>
+        </div>
+        <div class="login">
+            <a href="#"><i class="icon-login"></i></a>
+            <a href="#"><i class="icon-skin"></i></a>
+        </div>
+    </div>
+    <div class="baidu">
+        <img src="images/plus_logo.png" alt="百度一下，你就知道">
+        <form action="">
+            <div class="input_wrap">
+                <input type="text">
+                <button>百度一下</button>
+            </div>
+        </form>
+    </div>
+    <div class="navs">
+        <a href="#">
+            <i class="navs-news"></i>
+            新闻
+        </a>
+        <a href="#">
+            <i class="navs-novel"></i>
+            小说
+        </a>
+        <a href="#">
+            <i class="navs-video"></i>
+            视频
+        </a>
+        <a href="#">
+            <i class="navs-life"></i>
+            糯米
+        </a>
+        <a href="#">
+            <i class="navs-map"></i>
+            地图
+        </a>
+        <a href="#">
+            <i class="navs-more"></i>
+            更多
+        </a>
+    </div>
+    <div class="ad">
+        <ul>
+            <li class="hotIcon"><a href="#">百度浏览器，上网提速200%</a></li>
+            <li ><i class="baiduIcon"></i>手机百度，最省流量的急速搜索App</li>
+            <li class="hotIcon"><a href="#">百度推广，让有需求的客户找到你</a></li>
+        </ul>
+
+    </div>
+    <div class="footer">
+        <p>用户反馈</p>
+        <a href="#">使用百度前必读&nbsp;Baidu&nbsp;京ICP证030173号</a>
+        <p><i class="police"></i><a href="#">京公网安备11000002000001号</a></p>
+    </div>
+</div>
+<!--===手机版容器结束=======================================================================-->
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+
+.col{
+    width:  100%;
+    -webkit-column-count: 2;
+    -webkit-column-rule-style: outset;
+    -webkit-column-rule-color: #ffbbdd;
+    -webkit-column-gap: 30px;
+}
+
+.center{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background-color: orangered;
+    height:400px;
+    width: 400px;
+}
+
+.con{
+    display: -webkit-flex;
+    -webkit-box-orient: horizontal;
+    width: 600px;
+    background-color: green;
+}
+
+.first{
+    height: 100px;
+    background-color: orange;
+    -webkit-flex: 1;
+}
+
+.second{
+    height: 100px;
+    background-color: aquamarine;
+    -webkit-flex: 1;
+}
+
+.third{
+    height: 200px;
+    background-color: #e3ff7f;
+    -webkit-flex: 1;
+}
+
+

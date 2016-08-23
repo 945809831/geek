@@ -1,0 +1,387 @@
+
+@media screen and (min-width: 640px){
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .container{
+        overflow-y: hidden;
+    }
+    /*导航栏样式设置*/
+    #nav {
+        text-align: right;
+        margin-top: 22px;
+        margin-left: 10px;
+        margin-bottom: 100px;
+        min-width: 492px;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    #nav a:nth-child(7), #nav a:nth-child(8){
+        font-weight: normal;
+    }
+    /*导航栏链接的样式*/
+    .menu{
+        margin-right: 10px;
+        margin-left: 10px;
+        color: #333;
+    }
+    .menu:hover{
+        color: #00c;
+    }
+
+    /*<a>更多设置</a>链接的样式*/
+    #more {
+        background-color: rgb(51, 132, 255);
+        color: white;
+        font-weight: normal;
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 24px;
+        width: 60px;
+        outline: 5px solid rgb(51, 132, 255);
+    }
+    /*设置百度图标居中*/
+    #baidu_logo img{
+        height: 129px;
+        width: 270px;
+    }
+    #baidu_logo {
+        width: 270px;
+        margin: 10px  auto;
+    }
+    /*设置搜索表单居中及宽度，避免缩放窗口是变形*/
+    article form {
+        width: 660px;
+        margin: 10px  auto;
+    }
+    article form span{
+        display: inline-block;
+        width: 550px;
+        height: 36px;
+
+    }
+    /*搜索输入框的样式*/
+    #baidu_search {
+        width: 540px;
+        height: 36px;
+        font-size: 16px;
+        line-height: 18px;
+        border: rgb(153, 153, 153) solid thin;
+        border-width: 1px 0 1px 1px;
+        outline: none;
+    }
+
+    #baidu_search:focus{
+        border: blue  solid thin;
+        border-width: 1px 0 1px 1px;
+    }
+
+    #photo{
+        position: relative;
+        margin-left: -26px;
+        top: 3px;
+        left: -2px;
+        width: 16px;
+        height: 18px;
+        display: inline-block;
+        overflow: hidden;
+        background: url(../images/soutu_icons.png) no-repeat 0  0;
+    }
+    /*百度一下按钮的样式*/
+    #baidu_btn {
+        display: inline-block;
+        margin-left: -17px;
+        width: 100px;
+        height: 38px;
+        color: white;
+        background-color: rgb(51, 133, 255);
+        font-size: 15px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    /*页面底部关于信息的样式*/
+    footer {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 650px;
+        height: 70px;
+        margin-left: -325px;
+        margin-bottom: 50px;
+        font-size: 12px;
+        color: rgb(153, 153, 153);
+    }
+    footer div{
+        display: inline-block;
+    }
+    /*二维码图像右侧文字块的样式*/
+    .qrcode-text {
+        width: 52px;
+        height: 46px;
+        line-height: 22px;
+        margin-right: 30px;
+        vertical-align: middle; /*文字居中对齐*/
+    }
+    /*二维码的样式*/
+    .qrcode-img{
+        vertical-align: middle;
+    }
+    /*底部“把百度设为首页 关于百度 ICP认证 及公安备案信息” 块的样式*/
+    footer div:nth-child(5){
+        vertical-align: middle;
+        line-height: 22px;
+        color: rgb(153, 153, 153);
+    }
+    /*设置把百度设为首页、关于百度、About Baidu这一行样式*/
+    #about a{
+        color: rgb(153, 153, 153);
+    }
+    #about {
+        text-align: center;
+    }
+
+    #about a:nth-child(1){
+        float: left;
+    }
+    #about a:nth-child(3){
+        float: right;
+    }
+
+    #info{
+        text-align: left;
+    }
+    #info a{
+        color: rgb(153, 153, 153);
+    }
+    /*警徽和icp认证标志的样式*/
+    #police_logo{
+        position: relative;
+        top: 3px;
+        width: 14px;
+        height: 17px;
+        display: inline-block;
+        overflow: hidden;
+        background: url(../images/icons.png) no-repeat -623px -96px;
+    }
+    #icr_logo{
+        position: relative;
+        top: 3px;
+        width: 14px;
+        height: 17px;
+        display: inline-block;
+        overflow: hidden;
+        background: url(../images/icons.png) no-repeat -600px -96px;
+    }
+    /*=======移动版专有内容不可见=================*/
+    .m-container{
+        display: none;
+    }
+}
+
+/*移动版导航适配*/
+
+@media only screen and (max-width: 640px){
+    @font-face{
+        font-family: "icons";
+        src: url(../font/iconfont_b2795733.eot);
+        src: url(../font/iconfont_b2795733.eot#iefix) format('embedded-opentype'),
+             url(../font/iconfont_b2795733.woff) format('woff'),
+             url(../font/iconfont_b2795733.ttf) format('truetype'),
+             url(../font/iconfont_b2795733.svg?#iconfont) format('svg');
+        font-weight: normal;
+        font-style: normal
+    }
+    /*隐藏桌面版的container*/
+   .container{
+       display: none;
+   }
+    html, body{
+        height: 100%;
+        background-color: #EEEFF0;
+    }
+    .m-container{
+        position: relative;
+        height: 100%;
+        text-align: center;
+    }
+    /*设置页顶部天气及登录信息*/
+    .m-container .header{
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .weather{
+        top: 5px;
+        left: 5px;
+        text-align: left;
+        color: #8c8c8c;
+    }
+
+    .weather div{
+        display: inline-block;
+    }
+    .weather-num{
+        font-size: 20px;
+        padding-left: 2px;
+    }
+    .weather-status{
+        font-size: 12px;
+        position: relative;
+        top: 3px;
+    }
+    .weather-status p{
+        margin: 0;
+    }
+
+    /*右上角登录及皮肤链接*/
+    .login{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    .login i{
+        display: inline-block;
+        height: 24px;
+        color: #666;
+        font: 24px/1 icons;
+    }
+    .icon-skin:before{
+        content: '\e824';
+
+    }
+    .icon-login:before{
+        content: '\e809';
+    }
+   /*设置百度Logo图片样式*/
+   .m-container .baidu img{
+       margin: 20px  auto;
+       width: 175px;
+       height: 55px;
+   }
+   .m-container form .input_wrap{
+       position: relative;
+        height: 42px;
+        margin: 0 10px;
+        background: #fff;
+        border: 1px solid #949494;
+        border-bottom-color: #bcbcbc;
+    }
+   .m-container input{
+       margin: 0;
+       height: 40px;
+       line-height: 28px;
+       border: none;
+       outline: none;
+       width: 100%;
+   }
+    .m-container button{
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 82px;
+        height: 43px;
+        background: #38f;
+        color: #fff;
+        white-space: nowrap;
+        line-height: 42px;
+        letter-spacing: -1px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+    }
+    /*导航栏设置，字体图标没找到*/
+    .navs{
+        margin: 17px 0 14px;
+        overflow: hidden;
+    }
+    .navs a{
+        text-decoration: none;
+        text-align: center;
+        float: left;
+        width: 16%;
+        font-size: 12px;
+        color: #666;
+    }
+    .navs i{
+        display: block;
+        margin-bottom: 4px;
+        height: 24px;
+        color: #666;
+        font: 24px/1 icons;
+    }
+    .navs-news:before{
+        content: "\e799";
+    }
+    .navs-novel:before{
+        content: "\e801";
+    }
+    .navs-video:before{
+        content: "\e802";
+    }
+    .navs-life:before{
+        content: "\e831";
+    }
+    .navs-map:before{
+        content: "\e804";
+    }
+    .navs-more:before{
+        content: "\e812";
+    }
+    /*设置底部广告区域样式*/
+    .m-container .ad{
+        position: absolute;
+        bottom: 140px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: left;
+        color: #999;
+    }
+    .m-container .ad ul{
+        list-style: none;
+    }
+    .m-container .baiduIcon{
+        display: inline-block;
+        width: 15px;
+        height: 15px ;
+        background-image: url(../images/w_icon2.png);
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+    }
+    .m-container .ad .hotIcon:before{
+        content: '\e626';
+        top: 6px;
+        left: -3px;
+        font: 21px/1 icons;
+        color: #ed5353;
+    }
+    /*设置底部字体大小及颜色*/
+    .m-container .footer{
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        color: #999;
+    }
+    .m-container a{
+        text-decoration: none;
+        color: #999;
+    }
+    /*公安备案图标*/
+    .m-container .police{
+        position: relative;
+        top: 3px;
+        width: 14px;
+        height: 17px;
+        display: inline-block;
+        overflow: hidden;
+        background: url(../images/icons.png) no-repeat -623px -96px;
+    }
+}

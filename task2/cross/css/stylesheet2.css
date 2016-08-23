@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    /*容器宽度和高度都等于 (4+100+4)+(4+100+4)+(4+100+4)=312*/
+    width: 324px;
+    height: 324px;
+    /*使容器居中显示*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -162px 0px 0px -162px;
+}
+/*容器内9个方块的样式，全部向左浮动， 其中左上角、右上角、
+  左下角和右下角的4个方块不设置样式，使其不显示*/
+#container div{
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+/*设置喜欢的图片的大小和居中显示*/
+img{
+    width: 24px;
+    height: 24px;
+    margin: 38px 38px;
+}
+/*上面的方块*/
+#north {
+    background-color: darkblue;
+    box-shadow: 4px 4px 2px #888888;
+}
+/*左侧的方块*/
+#west {
+    background-color: yellowgreen;
+    box-shadow: 4px 4px 2px #888888;
+}
+/*中间的方块*/
+#center {
+    background-color: deepskyblue;
+    box-shadow: 4px 4px 2px #888888;
+}
+/*右侧的方块*/
+#east {
+    background-color: rebeccapurple;
+    box-shadow: 4px 4px 2px #888888;
+}
+/*最下面的方块*/
+#south {
+    background-color: red;
+    box-shadow: 4px 4px 2px #888888;
+}

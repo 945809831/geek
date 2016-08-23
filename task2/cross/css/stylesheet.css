@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*我喜欢的汽车人标志，这里设置宽度、高度和居中*/
+img {
+    margin: 38px 38px;
+    width: 24px;
+    height: 24px;
+}
+/*最外层包含框的样式*/
+#container {
+    /*计算宽度为（4+100+4）+ （4+100+4）+（4+100+4）= 324 */
+    width: 324px;
+    height: 324px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-162px 0 0 -162px;
+}
+
+/*所有方块的共同样式- 绝对定位，边长为100px的
+  正方形，带有4px的外边框及4px的阴影*/
+#container div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    box-shadow: 4px 4px 2px #888888;
+}
+/*上面的方块*/
+#north {
+    left: 108px;
+    top: 0px;
+    background-color: darkblue;
+}
+/*左侧的方块，下面的三个方块设置成inline-block,
+以便他们在一行内显示*/
+#west {
+    left: 0px;
+    top: 108px;
+    background-color: yellowgreen;
+}
+/*中间的方块*/
+#center {
+    left: 108px;
+    top: 108px;
+    background-color: deepskyblue;
+}
+/*右侧的方块*/
+#east {
+    left: 216px;
+    top: 108px;
+    background-color: rebeccapurple;
+}
+/*最下面的方块*/
+#south {
+    left: 108px;
+    top: 216px;
+    background-color: red;
+}
+
+
+
+
